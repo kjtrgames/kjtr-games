@@ -32,7 +32,7 @@ export const metadata = {
     title: 'KIJITORA Games',
     description: '――― ここは、数多の有志によってゲームが集う場所。―――',
     images: ['https://kjtrgames.github.io/resources/icon.svg'],
-  },  
+  }, 
 }
 
 export default function RootLayout({ children }) {
