@@ -11,19 +11,6 @@ export const metadata = {
     description: 'KIJITORAGAMESは、あなたの作品を自由に発信できる場所です。とりあえず見ろ',
     url: 'https://kjtrgames.github.io',
     siteName: 'KIJITORA Games',
-    images: [
-      {
-        url: 'https://kjtrgames.github.io/resources/icon.svg',
-        width: 800,
-        height: 600,
-      },
-      {
-        url: 'https://kjtrgames.github.io/resources/icon.svg',
-        width: 1800,
-        height: 1600,
-        alt: 'KIJITORAGAMESのアイコン',
-      },
-    ],
     locale: 'ja_JP',
     type: 'website',
   },
