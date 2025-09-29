@@ -1,0 +1,229 @@
+
+/*
+  This is the css I used a long time ago.
+*/
+body {
+  font-family: 'Kosugi Maru', cursive;
+  font-size:           1rem;
+  margin:              0;
+  text-align:          left;
+}
+
+.yes-script-text {
+  padding-top:         1rem;
+  padding-left:        30%;
+  padding-right:       30%;
+}
+
+h1, h2, h3, h4, h5, h6, header>nav>ul, .center {
+  text-align:          center;
+}
+
+header>nav {
+  position:            fixed;
+  top:                 -1em;
+  left:                0rem;
+  width:               100%;
+  height:              3rem;
+  padding-top:         0rem;
+  box-sizing:          border-box;
+  transition:          300ms;
+}
+header>nav:hover {
+  height:              4rem;
+}
+
+header>nav>ul {
+  display:             flex;
+}
+
+header>nav>ul>li {
+  list-style: none;
+}
+
+header>nav>ul>li>ul {
+  padding-left:        0;
+}
+
+header>nav>ul>li>ul>li {
+  list-style:          none;
+  margin-top:          none;
+  margin-bottom:       none;
+  display:             none;
+}
+
+header>nav>ul>li:hover>ul>li {
+  display:             block;
+}
+
+header>nav>ul>li>ul>li>a, header>nav:hover>ul>li>a {
+  line-height:         3rem;
+  display:             block;
+  text-decoration:     none;
+  margin-right:        none;
+  margin-left:         none;
+  transition:          300ms;
+}
+header>nav>ul>li>a {
+  line-height:         2rem;
+  display:             block;
+  text-decoration:     none;
+  margin-right:        none;
+  margin-left:         none;
+  transition:          300ms;
+}
+
+table {
+  border-collapse:     collapse;
+  border-spacing:      none;
+}
+td, th {
+  border-style:        solid;
+  border-width:        2px;
+}
+
+button.lefter {
+  border-radius:       0.75rem 0rem 0rem 0.75rem / 0.75rem 0rem 0rem 0.75rem;
+}
+button.middler {
+  border-radius:       0;
+}
+button.righter {
+  border-radius:       0rem 0.75rem 0.75rem 0rem / 0rem 0.75rem 0.75rem 0rem;
+}
+button.l-r, button.lefter.righter {
+  border-radius: 0.75rem / 0.75rem;
+}
+
+button.lefter, button.middler, button.righter, button.l-r {
+  border-style:        solid;
+  background-color:    blue;
+  border-color:        cyan;
+  color:               yellow;
+  transition:          100ms;
+}
+button.lefter:hover, button.middler:hover, button.righter:hover, button.l-r:hover {
+  background-color:    cyan;
+  border-color:        blue;
+}
+button.lefter:active, button.middler:active, button.righter:active, button.l-r:active {
+  background-color:    orange;
+  border-color:        orangered;
+  color:               purple;
+}
+
+/*
+a b c d e f g h i j k l m n o p q r s t u v w x y z
+*/
+
+.warn {
+  border-radius:       0.375rem / 0.375rem;
+  border-style:        double;
+  border-width:        2px;
+  margin-bottom:       0.5rem;
+  padding:             0.75rem;
+}
+.warn::before {
+  content: url(./reference_mark-1.svg);
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color:  orange;
+    color:             green;
+  }
+  
+  .yes-script-text {
+    background-color:  yellow;
+  }
+
+  header>nav {
+    background-color:  orange;
+  }
+
+  header>nav>ul>li>ul {
+    background-color:  darkorange;
+  }
+  
+  header>nav a {
+    color:             white;
+  }
+  header>nav a:hover {
+    background-color:  white;
+    color:             lime;
+  }
+
+  th, td {
+    border-color:      blue;
+  }
+
+  .warn {
+    background-color:  white;
+    border-color:      red;
+    color:             red;
+  }
+  .warn::selection {
+    background-color:  black;
+    color:             cyan;
+  }
+
+  iframe {
+    max-width: 100%;
+    border-style: solid;
+  }
+  
+}
+
+/*
+orange -> darkgoldenrod
+yellow -> olive
+lime   -> palegreen
+white  -> dimgray
+*/
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color:  chocolate;
+    color:             lime;
+  }
+  
+  .yes-script-text {
+    background-color:  #080808;
+  }
+  
+  header>nav {
+    background-color:  chocolate;
+
+  }
+
+  header>nav>ul>li>ul {
+    background-color:  darkorange;
+  }
+  
+  header>nav a {
+    color:             black;
+  }
+  header>nav a:hover {
+    background-color:  navy;
+    color:             palegreen;
+  }
+
+  th, td {
+    border-color:      white;
+  }
+
+  .warn {
+    background-color:  dimgray;
+    border-color:      red;
+    color:             red;
+  }
+  .warn::selection{
+    background-color:  white;
+    color:             purple;
+  }
+  iframe {
+    max-width: 100%;
+    border: none;
+  }
+
+}

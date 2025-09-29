@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500&display=swap');
+
+
+@import url("./header.css");
+
+/**  if you change header length values, 
+/**  please be careful to be moved other header content by home SVG. 
+/**  That's wanted to avoid so adjust home SVG's values, if you do.
+/**/
+@media (prefers-color-scheme: light) {
+  :root {
+    --alert-bg: white;
+    --alert-color-i: red;
+    --alert-color-ii: black;
+    --bg: yellow;
+    --font-color: green;
+    --header-bg: orange;
+    --header-border-color: none;
+    --header-content-radius: 2.5em;
+    --header-border-style: solid;
+    --header-border-width: 0px;
+    --header-color: white;
+    --header-content-bg: darkorange;
+    --header-shadow: none;
+    --header-transition: 600ms;
+    --iframe-color: pink;
+    --table-border: blue;
+    --warn-bg: var(--alert-bg);
+    --warn-color: red;
+    --warn-selected-color: cyan;
+    --warn-selected-bg: black;
+    --yst-bg: white;
+    --yst-border-width: 1.5rem;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --alert-bg: #444;
+    --alert-color-i: #ffa;
+    --alert-color-ii: black;
+    --bg: #000;
+    --font-color: #4c0;
+    --header-bg: #333;
+    --header-color: #eee;
+    --header-border-color: #aaa;
+    --header-border-style: solid;
+    --header-border-width: 1px;
+    --header-content-bg: #444;
+    --header-shadow: 0 -.5rem 1rem 1rem rgba(0, 0, 0, .75);
+    --header-transition: 600ms;
+    --iframe-color: pink;
+    --table-border: blue;
+    --warn-bg: #303030;
+    --warn-color: #c33;
+    --warn-selected-color: #3cc;
+    --warn-selected-bg: #cfcfcf;
+    --yst-bg: #222;
+    --yst-border-width: 0rem;
+  }
+}
+
+
+
+body {
+  color: var(--font-color);
+  display: inline;
+  font-family: 'Zen Maru Gothic', sans-serif;
+  font-size: 1rem;
+  margin: 0;
+  text-align: left;
+  transition: 300ms;
+  vertical-align: middle;
+}
+
+.\^iconpath\^ {
+  fill: var(--font-color);
+}
+
+article {
+  background: var(--yst-bg);
+  border-radius: var(--yst-border-width);
+  width: 60vw;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  margin-left: 15vw;
+  margin-right: 15vw;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+h1, h2, h3, h4, h5, h6, .center {
+  text-align: center;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  border-color: var(--table-border);
+  border-style: solid;
+  border-width: 2px;
+}
+
+button.lefter {
+  border-radius: .75rem 0rem 0rem .75rem / .75rem 0rem 0rem .75rem;
+}
+
+button.middler {
+  border-radius: 0;
+}
+
+button.righter {
+  border-radius: 0rem .75rem .75rem 0rem / 0rem .75rem .75rem 0rem;
+}
+
+button.l-r, button.lefter.righter {
+  border-radius: .75rem / .75rem;
+}
+
+button.lefter, button.middler, button.righter, button.l-r {
+  border-style: solid;
+  background: blue;
+  border-color: cyan;
+  color: yellow;
+  transition: 100ms;
+}
+
+button.lefter:hover, button.middler:hover, button.righter:hover, button.l-r:hover {
+  background: cyan;
+  border-color: blue;
+}
+
+button.lefter:active, button.middler:active, button.righter:active, button.l-r:active {
+  background: orange;
+  border-color: orangered;
+  color: purple;
+}
+
+.warn {
+  background: var(--warn-bg);
+  border-radius: .375rem / .375rem;
+  border-style: double;
+  border-width: 2px;
+  color: var(--warn-color);
+  margin-bottom: .5rem;
+  padding: .75rem;
+}
+
+.warn::before {
+  background-color: var(--warn-bg);
+  content: "※";
+  display: inline-block;
+  height: 1em;
+  /*mask: url("./reference_mark-1.svg") no-repeat 50% 50%;*/
+  mask-size: cover;
+  width: 1em;
+}
+
+
+
+.warn::selection, .warn *::selection {
+  background: var(--warn-selected-bg);
+  color: var(--warn-selected-color);
+}
+
+@keyframes autoblink {
+
+  0%,   19%,   23%,   69%,   73%,   79%,   83%,   100% {
+    border-color: var(--alert-color-ii);
+    color: var(--alert-color-ii);
+    fill: var(--alert-color-ii);
+  }
+
+  20%,   70%,   80% {
+    border-color: var(--alert-color-i);
+    color: var(--alert-color-i);
+    fill: var(--alert-color-i);
+  }
+}
+
+.alert, .alert::before {
+  animation-duration: 5s;
+  animation-name: autoblink;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.alert {
+  background: var(--alert-bg);
+  border-radius: .375rem / .375rem;
+  border-style: double;
+  border-width: 2px;
+  color: var(--warn-color);
+  margin-bottom: .5rem;
+  padding: .75rem;
+}
+
+.alert::before {
+  content: url(./ガイコツの無料アイコン.svg);
+}
+
+/*
+  super cool classes
+*/
+.blink {
+  background-color: red;
+  transition: 0ms;
+}
+
+.blink:hover {
+  filter: hue-rotate(129600deg);
+  transition: 72000ms;
+}
+
+@media (prefers-color-scheme: light) {
+  .sober {
+    color: rgba(0, 0, 0, .01);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .sober {
+    color: rgba(255, 255, 255, .01);
+  }
+}
+
+.sober::selection {
+  background-color: var(--yst-bg);
+}

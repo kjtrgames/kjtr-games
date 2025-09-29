@@ -1,0 +1,189 @@
+/* It's for hamburger menu */
+
+:root {
+  --is-hamburger: 1;
+}
+
+
+header li[home]>a>img {
+  height: 2em;
+  width: auto;
+}
+
+
+header nav>ul {
+  font-size: 1.2em;
+}
+
+/* for menu's backgrounds */
+
+header nav>ul {
+  margin: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom:0;
+  list-style-type: none;
+  padding-top: 1em;
+  padding-bottom: auto;
+  padding-left: 0;
+  padding-right: auto;
+  transition:
+    all var(--header-transition);
+  width: 0em;
+  white-space: nowrap;
+  z-index: 222280;
+}
+
+#\^hamburger-io:checked~ul {
+  background-color: var(--header-bg);
+  display: block;
+  width: 18em;
+}
+
+/* for marker */
+#\^hamburger-io~ul>li>a::before {
+  content: "▶︎";
+  color: transparent;
+  transition:
+    color calc(var(--header-transition) / 2) 0s;
+  }
+#\^hamburger-io:checked~ul>li:has(>a~ul)>a::before {
+  content: "▶︎";
+  color: var(--header-color);
+  transition:
+    color calc(var(--header-transition) / 2) calc(var(--header-transition) / 2);
+}
+#\^hamburger-io:checked~ul>li:hover>a::before {
+  content: "▼";
+}
+
+/* for childs */
+
+#\^hamburger-io:checked~ul>li>ul {
+  display: block;
+  position: relative;
+  left: 0;
+  list-style-type: none;
+  margin-block-start: 0;
+
+}
+#\^hamburger-io:checked~ul>li:hover>ul>li>a {
+  background: var(--header-content-bg);
+}
+
+#\^hamburger-io:checked~ul>li>ul>li {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#\^hamburger-io:checked~ul>li>ul>li>a {
+  height: 0;
+  line-height: 0;
+  opacity: 0;
+  transition: 
+    height var(--header-transition),
+    line-height var(--header-transition),
+    opacity var(--header-transition);
+}
+
+#\^hamburger-io:checked~ul>li:hover>ul>li>a {
+  height: 2em;
+  line-height: 2em;
+  opacity: 1;
+}
+#\^hamburger-io:checked~ul>li>ul>li:first-child>a {
+  border-radius: calc(var(--header-content-radius) / 4) calc(var(--header-content-radius) / 4) 0 0;
+}
+#\^hamburger-io:checked~ul>li>ul>li:last-child>a {
+  border-radius: 0 0 calc(var(--header-content-radius) / 4) calc(var(--header-content-radius) / 4);
+}
+
+
+/* for expander メニュー展開するやつ */
+
+#\^hamburger {
+  align-items: center;
+  background-color: var(--header-bg);
+  border-color: var(--header-border-color);
+  border-style: var(--header-border-style);
+  border-width: var(--header-border-width);
+  /*/box-shadow: 0.1em 0.1em 0.3em 0.2em rgba(0, 0, 0, .75);/**/
+  display: flex;
+  height: max(8vh, 8vw, 50px);
+  justify-content: center;
+  position: fixed;
+  right: max(2vh, 2vw);
+  top: max(2vh, 2vw);
+  width: max(8vh, 8vw, 50px);
+  z-index: 222290;
+}
+
+#\^hamburger span,
+#\^hamburger span::before,
+#\^hamburger span::after {
+  background-color: var(--header-color);
+  border-radius: max(.5vh, .5vw);
+  content: "";
+  display: block;
+  height: max(.5vh, .5vw);
+  position: absolute;
+  width: max(3vh, 3vw);
+}
+
+#\^hamburger span::before {
+  bottom: max(1.5vh, 1.5vw);
+}
+
+#\^hamburger span::after {
+  top: max(1.5vh, 1.5vw);
+}
+
+#\^hamburger-io~#\^hamburger span,
+#\^hamburger-io~#\^hamburger span::before,
+#\^hamburger-io~#\^hamburger span::after {
+  transition:
+    bottom calc(var(--header-transition) / 2) calc(var(--header-transition) / 2),
+    top calc(var(--header-transition) / 2) calc(var(--header-transition) / 2),
+    left calc(var(--header-transition) / 2) calc(var(--header-transition) / 2),
+    width calc(var(--header-transition) / 2) calc(var(--header-transition) / 2),
+    transform calc(var(--header-transition) / 2);
+}
+
+#\^hamburger-io:checked~#\^hamburger span,
+#\^hamburger-io:checked~#\^hamburger span::before,
+#\^hamburger-io:checked~#\^hamburger span::after {
+  transition:
+    bottom calc(var(--header-transition) / 2) calc(var(--header-transition) / 2),
+    top calc(var(--header-transition) / 2) calc(var(--header-transition) / 2),
+    left calc(var(--header-transition) / 2) calc(var(--header-transition) / 2),
+    width calc(var(--header-transition) / 2),
+    transform calc(var(--header-transition) / 2) var(--header-transition);
+}
+
+#\^hamburger-io:checked~#\^hamburger span {
+  width: 0;
+}
+
+#\^hamburger-io:checked~#\^hamburger span::before {
+  bottom: 0;
+  transform:
+    translateX(min(-1.5vh, -1.5vh)) rotateZ(90deg) rotateZ(135deg);
+}
+
+#\^hamburger-io:checked~#\^hamburger span::after {
+  top: 0;
+  transform:
+    translateX(min(-1.5vh, -1.5vh)) rotateZ(-90deg) rotateZ(-135deg);
+}
+
+@media (prefers-color-scheme: light) {
+  #\^humberger {
+    border-radius: 50%;
+    transition: border-radius calc(var(--header-transition) / 2);
+  }
+  #\^hamburger-io:checked~#\^hamburger {
+    border-radius: 0;
+  }
+}
