@@ -1,7 +1,6 @@
 export const metadata = {
   title: {
-    absolute: true,
-    default: 'KIJITORAGAMES',
+    absolute: "KIJITORA Games",
   },
   description: 'KIJITORAGAMESは、IT愛好会みたいな何かです。うん。とりまアクセスしよう!',
 }
