@@ -34,7 +34,7 @@ export default function RootLayout({ children }) {
           <input type="checkbox" id="^hamburger-io" />
           <label for="^hamburger-io" id="^hamburger"><span></span></label>
           <ul>
-            <li><a href="index.html" home>HOME</a></li>
+            <li><a href="/" home>HOME</a></li>
             <li><a href="/minecraft">マイクラ</a>
               <ul>
                 <li><a href="/minecraft/mods">MOD</a></li>
