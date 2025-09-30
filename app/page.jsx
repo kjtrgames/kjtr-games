@@ -8,6 +8,7 @@ export const metadata = {
 
 export default function Home() {
     return (
+      <main>
         <article>
         <div id="^main-title">
           <h1>猫のように、自由気ままに。</h1>
@@ -30,20 +31,16 @@ export default function Home() {
           一人称は「猫」。<br />
           はてなブログの「<a href="https://kjtrgames.hatenablog.jp/">キジトラニャン</a>」、scratchの<a
             href="https://scratch.mit.edu/users/ryoichiro/">@ryoichiro</a>と同一人物です。一応会長…だよ？
-            /* 
-              この暗号は解いてはいけない...君の名誉のためにも。
-              70, 97, 99, 107, 44, 121, 111 , 117
-            */
-          &#57343;
         </p>
         <h2>KIJITORAGAMESのアイコン</h2>
         <div class="center"><img src="resources/icon.svg" alt="くそッ！画像を見せられてないじゃないか！" title="icon" /></div>
-        <p style="display:inline">
-          わ<nav style="display:inline">　</nav>た<nav style="display:inline">　</nav>し<nav style="display:inline">　</nav>が<nav style="display:inline">　</nav>つ<nav style="display:inline">　</nav>く<nav style="display:inline">　</nav>り<nav style="display:inline">　</nav>ま<nav style="display:inline">　</nav>し<nav style="display:inline">　</nav>た<br /><br />
+        <p>
+          わ　た　し　が　つ　く　り　ま　し　た<br /><br />
           すごいじゃろすごいじゃろ？<br />
           いちにちでパパッとつくったのだ★☆彡
         </p>
         <p className="sover">自慢じゃないっすよ</p>    
       </article>
-    )
-    }
+    </main>
+  )
+}
