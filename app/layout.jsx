@@ -9,7 +9,7 @@ export const metadata = {
   openGraph: {
     title: 'KIJITORAGAMES',
     description: 'KIJITORAGAMESは、あなたの作品を自由に発信できる場所です。とりあえず見ろ',
-    url: 'https://kjtrgames.github.io',
+    url: 'https://kjtrgames.vercel.app',
     siteName: 'KIJITORA Games',
     locale: 'ja_JP',
     type: 'website',
