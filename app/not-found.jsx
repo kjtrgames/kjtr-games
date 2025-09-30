@@ -36,4 +36,5 @@ export default function NotFound() {
           ......ところで、屋上あんだけど焼いてかない?????????????
         </p>
       </article>
+    )
 }
