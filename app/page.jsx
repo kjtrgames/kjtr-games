@@ -1,18 +1,15 @@
 export const metadata = {
-  title: {
-    absolute: "KIJITORA Games",
-  },
+  title: "Home",
   description: 'KIJITORAGAMESは、IT愛好会みたいな何かです。うん。とりまアクセスしよう!',
 }
 
 export default function Home() {
     return (
-      <main>
-        <article>
+      <>
         <div id="^main-title">
           <h1>猫のように、自由気ままに。</h1>
         </div>
-  
+        <article>
         <p>
           どうも皆さんこんにちは、KIJITORA GAMESのキジトラニャンです。<br />
           KIJITORAGAMESでは主に、マイクラや作曲、ドット絵制作をしています。(現在会員1人w)
@@ -40,6 +37,6 @@ export default function Home() {
         </p>
         <p className="sover">自慢じゃないっすよ</p>    
       </article>
-    </main>
+    </>
   )
 }
