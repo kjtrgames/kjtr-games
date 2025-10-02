@@ -1,35 +1,25 @@
+'use client'
 
-// pages/login.jsx
-import { supabase } from '../lib/supabaseClient'
-import { useEffect, useState } from 'react'
-import { useRouter } from 'next/router'
+import { useState, useEffect } from 'react'
+import { supabase } from '../../lib/supabaseClient'
+import { useRouter } from 'next/navigation'  // App Router用
 
-export const metadata = {
-  title: "Login",
-  description: 'ログインページ',
-}
-
-export default function Login() {
+export default function LoginPage() {
+  const router = useRouter()
   const [loading, setLoading] = useState(false)
   const [user, setUser] = useState(null)
-  const router = useRouter()
 
-  // 初回ロード時にログイン済みなら取得
   useEffect(() => {
     supabase.auth.getSession().then(({ data: { session } }) => {
-      if (session) {
-        setUser(session.user)
-      }
+      if (session) setUser(session.user)
     })
   }, [])
 
   const handleLogin = async (provider) => {
     setLoading(true)
     const { error } = await supabase.auth.signInWithOAuth({
-      provider: provider,
-      options: {
-        redirectTo: `${window.location.origin}/login`, // ログイン後戻るURL
-      },
+      provider,
+      options: { redirectTo: `${window.location.origin}/login` },
     })
     if (error) alert(error.message)
     setLoading(false)
