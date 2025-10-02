@@ -19,7 +19,7 @@ export default function LoginPage() {
     setLoading(true)
     const { error } = await supabase.auth.signInWithOAuth({
       provider,
-      options: { redirectTo: `${window.location.origin}/login` },
+      options: { redirectTo: `https://kjtrgames.vercel.app` },
     })
     if (error) alert(error.message)
     setLoading(false)
