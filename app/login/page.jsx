@@ -9,5 +9,10 @@ export default function LoginPage() {
     })
   }
 
-  return <button onClick={handleLogin}>GitHubでログイン</button>
+  return (
+    <main>
+      <article>
+        <button onClick={handleLogin}>GitHubでログイン</button>
+      </article>
+    </main>
 }
