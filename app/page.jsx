@@ -1,5 +1,7 @@
 export const metadata = {
-  title: "Home",
+  title: {
+    absolute: "ホーム | キジトラゲームズ",
+  },
   description: 'KIJITORAGAMESは、IT愛好会みたいな何かです。うん。とりまアクセスしよう!',
 }
 
