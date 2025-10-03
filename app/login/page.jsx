@@ -15,4 +15,5 @@ export default function LoginPage() {
         <button onClick={handleLogin}>GitHubでログイン</button>
       </article>
     </main>
+  )
 }
