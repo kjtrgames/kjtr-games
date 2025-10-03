@@ -1,0 +1,109 @@
+
+#editor_all {
+  display: flex;
+}
+
+#editor_main {
+  width: 60%;
+  height: 100%;
+  border: solid 2px;
+  overflow: hidden;
+  text-align: left;
+  display: block;
+}
+
+#editor_main input#title {
+  font-size: 200%;
+  width: 100%;
+  padding: 0.25rem;
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 0px;
+  border-color: lime;
+  border-bottom:1px;
+}
+
+#download-settings {
+  width: 40%;
+  height: calc(25rem + 10px);
+  box-sizing: border-box;
+  padding: 1rem;
+  border: solid 2px;
+  display: block;
+  overflow: scroll;
+}
+
+#download-settings table {
+  text-align: center;
+}
+
+#download-settings table input {
+  height: 100%;
+  width: 4rem;
+  border: none;
+  margin: 0;
+  background-color: transparent;
+  color: lime;
+}
+
+@media (prefers-color-scheme: dark) {
+  #download-settings table input {
+    color: darkgreen;
+  }
+}
+
+.table-title {
+  font-size: 150%;
+  width: calc(100% - 6px);
+  border-color: lime;
+  border-style: solid;
+  border-width: 3px;
+  margin-bottom: 0.5rem;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+table {
+  border-collapse: collapse;
+  box-sizing: content-box;
+}
+
+th,
+td {
+  height: 1.5rem;
+  border-style: solid;
+  border-width: 2px;
+  border-color: lime;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#quill-ed {
+  height: 20rem;
+  background-color: white;
+}
+
+#download-settings {
+  text-align: center;
+}
+
+.ql-snow.ql-toolbar,
+.ql-snow.ql-container {
+  border: none;
+}
+
+/*
+.ql-snow.ql-toolbar {
+  --svg-color: green;
+  color: var(--svg-color);
+}
+
+.ql-snow.ql-toolbar .ql-fill {
+  fill: var(--svg-color);
+}
+
+.ql-snow.ql-toolbar .ql-stroke {
+  stroke: var(--svg-color);
+}*/
