@@ -4,23 +4,20 @@
   --is-hamburger: 1;
 }
 
-header nav>ul {
-  display: none;
-}
 
-header summary[home]>a>img {
+header *[home] img {
   height: 2em;
   width: auto;
 }
 
 
-header nav>details {
+header nav>span {
   font-size: 1.2em;
 }
 
 /* for menu's backgrounds */
 
-header nav>details {
+header nav>span {
   margin: 0;
   position: fixed;
   right: 0;
@@ -38,32 +35,32 @@ header nav>details {
   z-index: 222280;
 }
 
-#\^hamburger-io:checked~details {
+#\^hamburger-io:checked~span {
   background-color: var(--header-bg);
   display: block;
   width: 18em;
 }
 
-/* for marker */
-#\^hamburger-io~details {
+/* for marker *
+#\^hamburger-io~span>li>a::before {
   content: "▶︎";
   color: transparent;
   transition:
     color calc(var(--header-transition) / 2) 0s;
   }
-#\^hamburger-io:checked~details {
+#\^hamburger-io:checked~ul>li:has(>a~ul)>a::before {
   content: "▶︎";
   color: var(--header-color);
   transition:
     color calc(var(--header-transition) / 2) calc(var(--header-transition) / 2);
 }
-#\^hamburger-io:checked~span>details[open] {
+#\^hamburger-io:checked~ul>li:hover>a::before {
   content: "▼";
 }
 
 /* for childs */
 
-#\^hamburger-io:checked~span>details>summary>details {
+#\^hamburger-io:checked~span>details>span {
   display: block;
   position: relative;
   left: 0;
@@ -71,17 +68,17 @@ header nav>details {
   margin-block-start: 0;
 
 }
-#\^hamburger-io:checked~span>details[open]>summary>details>summary>a {
+#\^hamburger-io:checked~span>details[open] li>a {
   background: var(--header-content-bg);
 }
 
-#\^hamburger-io:checked~span>details>summary>details>summary {
+#\^hamburger-io:checked~span>details li {
   list-style: none;
   margin-top: 0;
   margin-bottom: 0;
 }
 
-#\^hamburger-io:checked~span>details>summary>details>summary>a {
+#\^hamburger-io:checked~span>details li>a {
   height: 0;
   line-height: 0;
   opacity: 0;
@@ -91,15 +88,15 @@ header nav>details {
     opacity var(--header-transition);
 }
 
-#\^hamburger-io:checked~span>details[open]>summary>details>summary>a {
+#\^hamburger-io:checked~span>details[open] li>a {
   height: 2em;
   line-height: 2em;
   opacity: 1;
 }
-#\^hamburger-io:checked~span>details>summary>details>summary:first-child>a {
+#\^hamburger-io:checked~span>details li:first-child>a {
   border-radius: calc(var(--header-content-radius) / 4) calc(var(--header-content-radius) / 4) 0 0;
 }
-#\^hamburger-io:checked~span>details>summary>details>summary:last-child>a {
+#\^hamburger-io:checked~span>details li:last-child>a {
   border-radius: 0 0 calc(var(--header-content-radius) / 4) calc(var(--header-content-radius) / 4);
 }
 

@@ -65,12 +65,37 @@ export default function RootLayout({ children }) {
             </li>
             <li><a href="https://forms.gle/VAdJjueZNdRPJi9aA">制作依頼</a></li>
           </ul>
+
           <span>
+            <a href="/" home><img src="/home.svg" /></a>
             <details>
-              <summary><a href="/" home><img src="/home.svg" /></a></summary>
-              
+              <summary><a href="/minecraft">マイクラ</a></summary>
+              <ul>
+                <li><a href="/minecraft/mods">MOD</a></li>
+                <li><a href="/minecraft/maps">配布マップ</a></li>
+                <li><a href="/minecraft/texturepacks">テクスチャ</a></li>
+                <li><a href="/minecraft/addons">MOD追加パック</a></li>
+                <li><a href="/minecraft/others">その他</a></li>
+              </ul>
             </details>
+            <details>
+              <summary><a href="/music">作曲</a></summary>
+              <ul>
+                <li><a href="/music/original">オリジナル</a></li>
+                <li><a href="/music/second">二次創作･RM</a></li>
+                <li><a href="/music/others">その他</a></li>
+              </ul>
+            </details>
+            <details>
+              <summary><a href="/pictures">絵</a></summary>
+              <ul>
+                <li><a href="/pictures/dots">ドット絵</a></li>
+                <li><a href="/pictures/others">その他の絵</a></li>
+              </ul>
+            </details>
+            <a href="https://forms.gle/VAdJjueZNdRPJi9aA">制作依頼</a>
           </span>
+
         </nav>
       </header>
       <main>
