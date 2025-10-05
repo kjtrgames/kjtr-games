@@ -1,3 +1,7 @@
+header nav * {
+  display: none;
+}
+
 
 #editor_all {
   display: flex;
