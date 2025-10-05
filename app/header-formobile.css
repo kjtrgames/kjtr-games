@@ -4,7 +4,7 @@
   --is-hamburger: 1;
 }
 
-header nav>details {
+header nav>ul {
   display: none;
 }
 
