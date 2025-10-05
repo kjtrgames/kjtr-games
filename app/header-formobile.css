@@ -4,6 +4,9 @@
   --is-hamburger: 1;
 }
 
+header nav>ul {
+  display: none;
+}
 
 header *[home] img {
   height: 2em;
