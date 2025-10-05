@@ -32,7 +32,8 @@ header nav>span {
   padding-left: 0;
   padding-right: auto;
   transition:
-    all var(--header-transition);
+    width var(--header-transition),
+    padding-left var(--header-transition);
   width: 0em;
   white-space: nowrap;
   z-index: 222280;
@@ -42,6 +43,7 @@ header nav>span {
   background-color: var(--header-bg);
   display: block;
   width: 18em;
+  padding-left: 1em;
 }
 
 /* for marker *
