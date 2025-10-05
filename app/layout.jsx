@@ -65,6 +65,12 @@ export default function RootLayout({ children }) {
             </li>
             <li><a href="https://forms.gle/VAdJjueZNdRPJi9aA">制作依頼</a></li>
           </ul>
+          <span>
+            <datalis>
+              <summary><a href="/" home>HOME</a></summary>
+              
+            </datalis>
+          </span>
         </nav>
       </header>
       <main>
