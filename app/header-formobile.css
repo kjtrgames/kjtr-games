@@ -4,6 +4,9 @@
   --is-hamburger: 1;
 }
 
+header nav>details {
+  display: none;
+}
 
 header li[home]>a>img {
   height: 2em;
@@ -11,13 +14,13 @@ header li[home]>a>img {
 }
 
 
-header nav>ul {
+header nav>details {
   font-size: 1.2em;
 }
 
 /* for menu's backgrounds */
 
-header nav>ul {
+header nav>details {
   margin: 0;
   position: fixed;
   right: 0;
@@ -35,32 +38,32 @@ header nav>ul {
   z-index: 222280;
 }
 
-#\^hamburger-io:checked~ul {
+#\^hamburger-io:checked~details {
   background-color: var(--header-bg);
   display: block;
   width: 18em;
 }
 
 /* for marker */
-#\^hamburger-io~ul>li>a::before {
+#\^hamburger-io~details>li>a::before {
   content: "▶︎";
   color: transparent;
   transition:
     color calc(var(--header-transition) / 2) 0s;
   }
-#\^hamburger-io:checked~ul>li:has(>a~ul)>a::before {
+#\^hamburger-io:checked~details>li:has(>a~details)>a::before {
   content: "▶︎";
   color: var(--header-color);
   transition:
     color calc(var(--header-transition) / 2) calc(var(--header-transition) / 2);
 }
-#\^hamburger-io:checked~ul>li:hover>a::before {
+#\^hamburger-io:checked~details>li:hover>a::before {
   content: "▼";
 }
 
 /* for childs */
 
-#\^hamburger-io:checked~ul>li>ul {
+#\^hamburger-io:checked~details>li>details {
   display: block;
   position: relative;
   left: 0;
@@ -68,17 +71,17 @@ header nav>ul {
   margin-block-start: 0;
 
 }
-#\^hamburger-io:checked~ul>li:hover>ul>li>a {
+#\^hamburger-io:checked~details>li:hover>details>li>a {
   background: var(--header-content-bg);
 }
 
-#\^hamburger-io:checked~ul>li>ul>li {
+#\^hamburger-io:checked~details>li>details>li {
   list-style: none;
   margin-top: 0;
   margin-bottom: 0;
 }
 
-#\^hamburger-io:checked~ul>li>ul>li>a {
+#\^hamburger-io:checked~details>li>details>li>a {
   height: 0;
   line-height: 0;
   opacity: 0;
@@ -88,15 +91,15 @@ header nav>ul {
     opacity var(--header-transition);
 }
 
-#\^hamburger-io:checked~ul>li:hover>ul>li>a {
+#\^hamburger-io:checked~details>li:hover>details>li>a {
   height: 2em;
   line-height: 2em;
   opacity: 1;
 }
-#\^hamburger-io:checked~ul>li>ul>li:first-child>a {
+#\^hamburger-io:checked~details>li>details>li:first-child>a {
   border-radius: calc(var(--header-content-radius) / 4) calc(var(--header-content-radius) / 4) 0 0;
 }
-#\^hamburger-io:checked~ul>li>ul>li:last-child>a {
+#\^hamburger-io:checked~details>li>details>li:last-child>a {
   border-radius: 0 0 calc(var(--header-content-radius) / 4) calc(var(--header-content-radius) / 4);
 }
 

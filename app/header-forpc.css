@@ -8,6 +8,10 @@ header nav {
   border: var(--header-border-color) var(--header-border-width) var(--header-border-style);
 }
 
+header nav>span {
+  display: none;
+}
+
 header nav>ul>li>ul {
   border: var(--header-border-color) var(--header-border-width) var(--header-border-style);
 }

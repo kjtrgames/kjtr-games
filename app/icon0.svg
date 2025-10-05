@@ -1,4 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="1000"><style>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="1000">
+  <style>
     #light-icon {
       display: inline;
     }
@@ -14,18 +15,53 @@
         display: inline;
       }
     }
-  </style><g id="light-icon"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="1000"><g clip-path="url(#SvgjsClipPath1095)"><rect width="1000" height="1000" fill="#111144"></rect><g transform="matrix(62.5,0,0,62.5,0,0)"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
-    <linearGradient id="Gradient" x1="0.2" x2="0.8" y1="-0.2" y2="1.2">
-      <stop offset="0%" stop-color="#ffff00"></stop>
-      <stop offset="50%" stop-color="#ffaaff" stop-opacity="1"></stop>
-      <stop offset="100%" stop-color="#ff8800"></stop>
-    </linearGradient>
-	<path d="M 0 0 L 0 4 L 4 4 A 4 10 0 0 1 0 14 V 16 A 6 11 0 0 0 6 5 L 6 0 Z M 7 0 V 16 L 9 16 L 9 0 Z M 10 0 L 16 0 L 16 4 L 10 4 Z M 10 5 H 16 V 10 A 6 6 0 0 1 10 16 L 10 14 A 5 5 0 0 0 14 9 L 10 9 Z" fill="url(#Gradient)"></path>
-</svg></svg></g></g><defs><clipPath id="SvgjsClipPath1095"><rect width="1000" height="1000" x="0" y="0" rx="350" ry="350"></rect></clipPath></defs></svg></g><g id="dark-icon"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="1000"><g clip-path="url(#SvgjsClipPath1096)"><rect width="1000" height="1000" fill="#551144"></rect><g transform="matrix(62.5,0,0,62.5,0,0)"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
-    <linearGradient id="Gradient" x1="0.2" x2="0.8" y1="-0.2" y2="1.2">
-      <stop offset="0%" stop-color="#ffff00"></stop>
-      <stop offset="50%" stop-color="#ffaaff" stop-opacity="1"></stop>
-      <stop offset="100%" stop-color="#ff8800"></stop>
-    </linearGradient>
-	<path d="M 0 0 L 0 4 L 4 4 A 4 10 0 0 1 0 14 V 16 A 6 11 0 0 0 6 5 L 6 0 Z M 7 0 V 16 L 9 16 L 9 0 Z M 10 0 L 16 0 L 16 4 L 10 4 Z M 10 5 H 16 V 10 A 6 6 0 0 1 10 16 L 10 14 A 5 5 0 0 0 14 9 L 10 9 Z" fill="url(#Gradient)"></path>
-</svg></svg></g></g><defs><clipPath id="SvgjsClipPath1096"><rect width="1000" height="1000" x="0" y="0" rx="350" ry="350"></rect></clipPath></defs></svg></g></svg>
+  </style>
+  <g id="light-icon">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="1000">
+      <g clip-path="url(#SvgjsClipPath1095)">
+        <rect width="1000" height="1000" fill="#ffffff"></rect>
+        <g transform="matrix(62.5,0,0,62.5,0,0)">
+          <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+              <linearGradient id="Gradient" x1="0.2" x2="0.8" y1="-0.2" y2="1.2">
+                <stop offset="0%" stop-color="#dddd00"></stop>
+                <stop offset="50%" stop-color="#dd88dd" stop-opacity="1"></stop>
+                <stop offset="100%" stop-color="#dd6600"></stop>
+              </linearGradient>
+	            <path d="M 0 0 L 0 4 L 4 4 A 4 10 0 0 1 0 14 V 16 A 6 11 0 0 0 6 5 L 6 0 Z M 7 0 V 16 L 9 16 L 9 0 Z M 10 0 L 16 0 L 16 4 L 10 4 Z M 10 5 H 16 V 10 A 6 6 0 0 1 10 16 L 10 14 A 5 5 0 0 0 14 9 L 10 9 Z" fill="url(#Gradient)"></path>
+            </svg>
+          </svg>
+        </g>
+      </g>
+      <defs>
+        <clipPath id="SvgjsClipPath1095">
+          <rect width="1000" height="1000" x="0" y="0" rx="350" ry="350"></rect>
+        </clipPath>
+      </defs>
+    </svg>
+  </g>
+  <g id="dark-icon">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="1000">
+      <g clip-path="url(#SvgjsClipPath1096)">
+        <rect width="1000" height="1000" fill="#551144"></rect>
+        <g transform="matrix(62.5,0,0,62.5,0,0)">
+          <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+              <linearGradient id="Gradient" x1="0.2" x2="0.8" y1="-0.2" y2="1.2">
+                <stop offset="0%" stop-color="#ffff00"></stop>
+                <stop offset="50%" stop-color="#ffaaff" stop-opacity="1"></stop>
+                <stop offset="100%" stop-color="#ff8800"></stop>
+              </linearGradient>
+              <path d="M 0 0 L 0 4 L 4 4 A 4 10 0 0 1 0 14 V 16 A 6 11 0 0 0 6 5 L 6 0 Z M 7 0 V 16 L 9 16 L 9 0 Z M 10 0 L 16 0 L 16 4 L 10 4 Z M 10 5 H 16 V 10 A 6 6 0 0 1 10 16 L 10 14 A 5 5 0 0 0 14 9 L 10 9 Z" fill="url(#Gradient)"></path>
+            </svg>
+          </svg>
+        </g>
+      </g>
+      <defs>
+        <clipPath id="SvgjsClipPath1096">
+          <rect width="1000" height="1000" x="0" y="0" rx="350" ry="350"></rect>
+        </clipPath>
+      </defs>
+    </svg>
+  </g>
+</svg>
