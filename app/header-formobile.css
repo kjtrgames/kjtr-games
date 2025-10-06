@@ -21,6 +21,7 @@ header nav>span {
 /* for menu's backgrounds */
 
 header nav>span {
+  background-color: var(--header-bg);
   margin: 0;
   position: fixed;
   right: 0;
@@ -40,26 +41,27 @@ header nav>span {
 }
 
 #\^hamburger-io:checked~span {
-  background-color: var(--header-bg);
   display: block;
   width: 18em;
   padding-left: 1em;
 }
 
-/* for marker *
-#\^hamburger-io~span>li>a::before {
+/* for marker */
+#\^hamburger-io~span>details>summary::before {
   content: "▶︎";
   color: transparent;
+  padding-right: 0;
   transition:
-    color calc(var(--header-transition) / 2) 0s;
+    color calc(var(--header-transition) / 2) 0s,
+    padding 0s;
   }
-#\^hamburger-io:checked~ul>li:has(>a~ul)>a::before {
-  content: "▶︎";
+#\^hamburger-io:checked~span>details>summary {
   color: var(--header-color);
+  padding-right: 1.5em;
   transition:
     color calc(var(--header-transition) / 2) calc(var(--header-transition) / 2);
 }
-#\^hamburger-io:checked~ul>li:hover>a::before {
+#\^hamburger-io:checked~span>details[open]>summary::before {
   content: "▼";
 }
 
