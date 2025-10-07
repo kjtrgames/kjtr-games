@@ -15,7 +15,7 @@ header *[home] img {
 
 
 header nav>span {
-  font-size: 1.2em;
+  font-size: max(3.2vh,3.2vw,20px);
 }
 
 header nav>span>details>summary>a {
@@ -46,20 +46,21 @@ header nav>span {
 
 #\^hamburger-io:checked~span {
   display: block;
-  width: 18em;
+  width: 15em;
   padding-left: 1em;
 }
 
 /* for marker */
 #\^hamburger-io~span>details>summary::before {
   content: "▶︎";
-  color: #0000;
+  display: none;
   padding-right: 0;
   transition:
     color calc(var(--header-transition) / 2) 0s,
     padding 0s;
   }
 #\^hamburger-io:checked~span>details>summary {
+  display: block;
   color: var(--header-color);
   padding-right: 1.5em;
   transition:
