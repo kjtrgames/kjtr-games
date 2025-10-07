@@ -71,7 +71,7 @@ header nav>span {
     color calc(var(--header-transition) / 2) 0s,
     padding 0s;
   }
-#\^hamburger-io:checked~span>details>summary {
+#\^hamburger-io:checked~span>details>summary::before {
   display: block;
   color: var(--header-color);
   padding-right: 1.5em;
