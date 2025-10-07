@@ -29,8 +29,8 @@
     --warn-color: red;
     --warn-selected-color: cyan;
     --warn-selected-bg: black;
-    --yst-bg: white;
-    --yst-border-width: 1.5rem;
+    --article-bg: white;
+    --article-border-width: 1.5rem;
   }
 }
 @media (prefers-color-scheme: dark) {
@@ -54,14 +54,15 @@
     --warn-color: #c33;
     --warn-selected-color: #3cc;
     --warn-selected-bg: #cfcfcf;
-    --yst-bg: #222;
-    --yst-border-width: 0rem;
+    --article-bg: #222;
+    --article-border-width: 0rem;
   }
 }
 
 
 
 body {
+  background: var(--bg);
   color: var(--font-color);
   display: inline;
   font-family: 'Zen Maru Gothic', sans-serif;
@@ -77,8 +78,8 @@ body {
 }
 
 article {
-  background: var(--yst-bg);
-  border-radius: var(--yst-border-width);
+  background: var(--article-bg);
+  border-radius: var(--article-border-width);
   width: 60vw;
   margin-top: 0;
   margin-bottom: 1rem;
@@ -229,5 +230,5 @@ button.lefter:active, button.middler:active, button.righter:active, button.l-r:a
 }
 
 .sober::selection {
-  background-color: var(--yst-bg);
+  background-color: var(--article-bg);
 }

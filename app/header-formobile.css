@@ -18,6 +18,10 @@ header nav>span {
   font-size: 1.2em;
 }
 
+header nav>span>details>summary>a {
+  display: inline;
+}
+
 /* for menu's backgrounds */
 
 header nav>span {
