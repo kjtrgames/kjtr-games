@@ -67,25 +67,24 @@ header nav>span {
 
 /* for childs */
 
-#\^hamburger-io:checked~span>details>span {
+#\^hamburger-io:checked~span>details>ul {
   display: block;
   position: relative;
   left: 0;
-  list-style-type: none;
+  list-style: none;
   margin-block-start: 0;
-
 }
-#\^hamburger-io:checked~span>details[open] li>a {
+#\^hamburger-io:checked~span>details[open]>ul>li>a {
   background: var(--header-content-bg);
 }
 
-#\^hamburger-io:checked~span>details li {
+#\^hamburger-io:checked~span>details>ul>li {
   list-style: none;
   margin-top: 0;
   margin-bottom: 0;
 }
 
-#\^hamburger-io:checked~span>details li>a {
+#\^hamburger-io:checked~span>details>ul>li>a {
   height: 0;
   line-height: 0;
   opacity: 0;
@@ -95,15 +94,15 @@ header nav>span {
     opacity var(--header-transition);
 }
 
-#\^hamburger-io:checked~span>details[open] li>a {
+#\^hamburger-io:checked~span>details[open]>ul>li>a {
   height: 2em;
   line-height: 2em;
   opacity: 1;
 }
-#\^hamburger-io:checked~span>details li:first-child>a {
+#\^hamburger-io:checked~span>details>ul>li:first-child>a {
   border-radius: calc(var(--header-content-radius) / 4) calc(var(--header-content-radius) / 4) 0 0;
 }
-#\^hamburger-io:checked~span>details li:last-child>a {
+#\^hamburger-io:checked~span>details>ul>li:last-child>a {
   border-radius: 0 0 calc(var(--header-content-radius) / 4) calc(var(--header-content-radius) / 4);
 }
 
