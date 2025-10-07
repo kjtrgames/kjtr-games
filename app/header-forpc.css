@@ -101,7 +101,7 @@ header nav>ul>li:hover>ul>li>a {
 
 /* for home svg */
 
-header li[home]>a>img {
+header li.home>a>img {
   height: 2em;
   width: auto;
   margin-left: 2.5em;
@@ -111,13 +111,13 @@ header li[home]>a>img {
 }
 
 
-header:hover li[home]>a>img {
+header:hover li.home>a>img {
   height: 3em;
   margin-left: 1em;
   margin-right: 1em;
 }
 
-header nav li[home]:hover>a {
+header nav li.home:hover>a {
   background: transparent;
 }
 

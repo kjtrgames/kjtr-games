@@ -13,12 +13,12 @@ header {
   z-index: 222200;
 }
 
-header li[home]>a>img {
+header li.home>a>img {
   filter: invert(100%);
   transition: all var(--header-transition);
 }
 
-header nav li[home]>a:hover>img {
+header nav li.home>a:hover>img {
   filter: invert(0%);
 }
 
