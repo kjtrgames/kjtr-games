@@ -69,7 +69,7 @@ export default function RootLayout({ children }) {
           <span>
             <a href="/" home><img src="/home.svg" /></a>
             <details>
-              <summary><a href="/minecraft">マイクラ</a></summary>
+              <summary>テスト<a href="/minecraft">マイクラ</a></summary>
               <ul>
                 <li><a href="/minecraft/mods">MOD</a></li>
                 <li><a href="/minecraft/maps">配布マップ</a></li>

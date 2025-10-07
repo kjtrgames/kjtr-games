@@ -49,7 +49,7 @@ header nav>span {
 /* for marker */
 #\^hamburger-io~span>details>summary::before {
   content: "▶︎";
-  color: transparent;
+  color: #0000;
   padding-right: 0;
   transition:
     color calc(var(--header-transition) / 2) 0s,
