@@ -13,18 +13,9 @@ header nav .home img {
   width: auto;
 }
 
-
-@media (prefers-color-scheme: light) {
-  header nav .home img {
-    transform: invert(100%);
-  }
+header nav .home img {
+  filter: invert(100%);
 }
-@media (prefers-color-scheme: dark) {
-  header nav .home img {
-    transform: invert(100%);
-  }
-}
-
 
 header nav>span {
   font-size: max(3.2vh,3.2vw,20px);
@@ -32,6 +23,10 @@ header nav>span {
 
 header nav>span>details>summary>a {
   display: inline;
+}
+
+header nav>span>details>summary>a:hover {
+  border-radius: calc(var(--header-content-radius) / 2)
 }
 
 /* for menu's backgrounds */
@@ -72,7 +67,7 @@ header nav>span {
     padding 0s;
   }
 #\^hamburger-io:checked~span>details>summary::before {
-  display: block;
+  display: inline;
   color: var(--header-color);
   padding-right: 1.5em;
   transition:
@@ -80,6 +75,9 @@ header nav>span {
 }
 #\^hamburger-io:checked~span>details[open]>summary::before {
   content: "▼";
+}
+#\^hamburger-io:checked~span>a {
+  padding-left: 2.5em;
 }
 
 /* for childs */
