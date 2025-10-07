@@ -2,8 +2,8 @@ import "./globals.css";
 
 export const metadata = {
   title: {
-    template: '%s | KJGAMES',
-    default: '作品一覧'
+    template: '%s | キジトラゲームズ',
+    default: '作品一覧 | キジトラゲームズ'
   },
   description: '作品投稿サイト',
   openGraph: {
@@ -18,7 +18,7 @@ export const metadata = {
     card: 'summary_large_image',
     title: 'KIJITORA Games',
     description: '――― ここは、数多の有志によってゲームが集う場所。―――',
-    images: ['https://kjtrgames.github.io/resources/icon.svg'],
+    images: ['https://kjtrgames.vercel.app/resources/icon.svg'],
   }, 
 }
 

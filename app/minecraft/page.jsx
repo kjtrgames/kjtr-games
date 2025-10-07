@@ -1,3 +1,22 @@
+export const metadata = {
+  title: "マイクラ作品一覧",
+  description: 'マイクラ関連の作品投稿サイト',
+  openGraph: {
+    title: 'マイクラ関連作品一覧',
+    description: 'KIJITORAGAMESは、あなたの作品を自由に発信できる場所です。とりあえず見ろ',
+    url: 'https://kjtrgames.vercel.app',
+    siteName: 'KIJITORA Games',
+    locale: 'ja_JP',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'KIJITORA Games',
+    description: '――― ここは、数多の有志によってゲームが集う場所。―――',
+    images: ['https://kjtrgames.vercel.app/resources/icon0.svg'],
+  }, 
+}
+
 export default function PageMinecraft() {
   return (
     <article>
