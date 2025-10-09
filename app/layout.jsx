@@ -33,7 +33,7 @@ export default function RootLayout({ children }) {
         <nav>
           <input type="checkbox" id="^hamburger-io" />
           <label for="^hamburger-io" id="^hamburger"><span></span></label>
-          <ul>
+          <ul id="^standard-menu">
             <li><a href="/" className="home"><img src="/home.svg" /></a></li>
             <li><a href="/minecraft">マイクラ</a>
               <ul>
@@ -66,10 +66,11 @@ export default function RootLayout({ children }) {
             <li><a href="https://forms.gle/VAdJjueZNdRPJi9aA">制作依頼</a></li>
           </ul>
 
-          <span>
-            <a href="/" className="home"><img src="/home.svg" /></a>
-            <details>
-              <summary><a href="/minecraft">マイクラ</a></summary>
+          <span id="^hanburger-menu">
+            <a href="/" class="home"><img src="/home.svg" alt="home" /></a>
+            <input type="radio" name="^header-nav-index" id="^nav-index" checked hidden />
+            <input type="radio" name="^header-nav-index" id="^nav-minecraft" hidden />
+            <label for="nav-minecraft"><a href="/minecraft">マイクラ</a>
               <ul>
                 <li><a href="/minecraft/mods">MOD</a></li>
                 <li><a href="/minecraft/maps">配布マップ</a></li>
@@ -77,22 +78,22 @@ export default function RootLayout({ children }) {
                 <li><a href="/minecraft/addons">MOD追加パック</a></li>
                 <li><a href="/minecraft/others">その他</a></li>
               </ul>
-            </details>
-            <details>
-              <summary><a href="/music">作曲</a></summary>
+            </label>
+            <input type="radio" name="^header-nav-index" id="^nav-music" hidden />
+            <label for="nav-music"><a href="/music">作曲</a>
               <ul>
                 <li><a href="/music/original">オリジナル</a></li>
                 <li><a href="/music/second">二次創作･RM</a></li>
                 <li><a href="/music/others">その他</a></li>
               </ul>
-            </details>
-            <details>
-              <summary><a href="/pictures">絵</a></summary>
+            </label>
+            <input type="radio" name="^header-nav-index" id="^nav-pictures" hidden />
+            <label for="nav-pictures"><a href="/pictures">絵</a>
               <ul>
                 <li><a href="/pictures/dots">ドット絵</a></li>
                 <li><a href="/pictures/others">その他の絵</a></li>
               </ul>
-            </details>
+            </label>
             <a href="https://forms.gle/VAdJjueZNdRPJi9aA">制作依頼</a>
           </span>
 

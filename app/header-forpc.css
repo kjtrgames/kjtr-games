@@ -12,11 +12,11 @@ header nav>span {
   display: none;
 }
 
-header nav>ul>li>ul {
+#\^standard-menu>li>ul {
   border: var(--header-border-color) var(--header-border-width) var(--header-border-style);
 }
 
-header nav>ul {
+#\^standard-menu {
   border: var(--header-border-color) var(--header-border-width) var(--header-border-style);
   box-sizing: content-box;
   display: flex;
@@ -33,12 +33,12 @@ header nav>ul {
     all var(--header-transition);
   width: calc(100% - var(--header-border-width) * 2);
 }
-header nav>ul:hover {
+#\^standard-menu:hover {
   height: 4rem;
   transform: translate(0, -2px);
 }
 
-header nav>ul>li {
+#\^standard-menu>li {
   list-style: none;
 }
 header nav:hover>ul>li>a {
@@ -46,23 +46,23 @@ header nav:hover>ul>li>a {
 }
 
 /* 要検証、Chrome, Macでは不要と確認済み */
-header nav>ul:first-child a::before {
+#\^standard-menu:first-child a::before {
   content:"a";
 }
 /**/
 
-header nav>ul>li>a {
+#\^standard-menu>li>a {
   border-radius: 0;
   line-height: 3rem;
   transition:
     all var(--header-transition);
 }
 
-header nav>ul>li:hover>a {
+#\^standard-menu>li:hover>a {
   border-radius: calc(var(--header-content-radius) / 2);
 }
 
-header nav>ul>li>ul {
+#\^standard-menu>li>ul {
   background: var(--header-content-bg);
   border-radius: 0 0 var(--header-content-radius) var(--header-content-radius);
   border-width: 0;
@@ -71,19 +71,19 @@ header nav>ul>li>ul {
     border-width 0ms var(--header-transition);
 }
 
-header nav>ul>li:hover>ul {
+#\^standard-menu>li:hover>ul {
   border-width: var(--header-border-width);
   transition:
     border-width var(--header-transition);
 }
 
-header nav>ul>li>ul>li {
+#\^standard-menu>li>ul>li {
   list-style: none;
   margin-top: 0;
   margin-bottom: 0;
 }
 
-header nav>ul>li>ul>li>a {
+#\^standard-menu>li>ul>li>a {
   height: 0;
   line-height: 0;
   opacity: 0;
@@ -93,7 +93,7 @@ header nav>ul>li>ul>li>a {
     opacity var(--header-transition);
 }
 
-header nav>ul>li:hover>ul>li>a {
+#\^standard-menu>li:hover>ul>li>a {
   height: 3em;
   line-height: 3em;
   opacity: 1;
@@ -123,11 +123,11 @@ header nav li.home:hover>a {
 
 /* for round lowest child content */
 
-header nav>ul>li>ul>li:nth-last-child(1)>a:hover {
+#\^standard-menu>li>ul>li:nth-last-child(1)>a:hover {
   border-radius: 0 0 var(--header-content-radius) var(--header-content-radius);
 }
 
-header nav>ul>li>ul>li:nth-last-child(1)>a {
+#\^standard-menu>li>ul>li:nth-last-child(1)>a {
   list-style: 10em;
 }
 
