@@ -59,20 +59,16 @@ header nav>span {
 
 /* for marker */
 
-#\^hamburger-io~span>input:checked+label::before {
+#\^hamburger-io~span>input+label::before {
+  display: inline;
   content: "▶︎";
   color: var(--header-color);
-  display: none;
   padding-right: 0;
-  transition:
-    padding 0s;
-  }
-#\^hamburger-io:checked~span>input:checked+label:before {
-  display: inline;
   padding-right: 1.5em;
   transition:
+    padding 0s,
     color calc(var(--header-transition) / 2) calc(var(--header-transition) / 2);
-}
+  }
 #\^hamburger-io:checked~span>input:checked+label::before {
   content: "▼";
 }
@@ -82,43 +78,45 @@ header nav>span {
 
 /* for childs */
 
+#\^hamburger-io~span>label>ul {
+  marker: none;
+}
 #\^hamburger-io:checked~span>label>ul {
+  background: var(--header-content-bg);
   display: block;
   position: relative;
   left: 0;
   list-style: none;
   margin-block-start: 0;
 }
-#\^hamburger-io:checked~span>input:checked+label>ul>li>a {
-  background: var(--header-content-bg);
-}
 
-#\^hamburger-io:checked~span>label>ul>li {
+#\^hamburger-io~span>label>ul>li {
   list-style: none;
   margin-top: 0;
   margin-bottom: 0;
 }
 
-#\^hamburger-io:checked~span>label>ul>li>a {
+#\^hamburger-io~span>input~label>ul>li {
   height: 0;
   line-height: 0;
   opacity: 0;
   transition: 
     height var(--header-transition),
     line-height var(--header-transition),
-    opacity var(--header-transition);
+    opacity  var(--header-transition);
 }
 
-#\^hamburger-io:checked~span>input:checked>label>ul>li>a {
+#\^hamburger-io~span>input:checked+label>ul>li  {
   height: 2em;
   line-height: 2em;
-  opacity: 1;
+  opacity:1;
+  transition:
+    height var(--header-transition),
+    line-height var(--header-transition),
+    opacity var(--header-transition);
 }
-#\^hamburger-io:checked~span>label>ul>li:first-child>a {
-  border-radius: calc(var(--header-content-radius) / 4) calc(var(--header-content-radius) / 4) 0 0;
-}
-#\^hamburger-io:checked~span>label>ul>li:last-child>a {
-  border-radius: 0 0 calc(var(--header-content-radius) / 4) calc(var(--header-content-radius) / 4);
+#\^hamburger-io:checked~span>label>ul {
+  border-radius: calc(var(--header-content-radius) / 4) calc(var(--header-content-radius) / 4)  calc(var(--header-content-radius) / 4) calc(var(--header-content-radius) / 4);
 }
 
 
