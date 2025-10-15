@@ -1,3 +1,4 @@
+import { ReactNode } from "react";
 import "./globals.css";
 
 export const metadata = {
@@ -22,7 +23,7 @@ export const metadata = {
   }, 
 }
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <body>
       <noscript>
@@ -32,7 +33,7 @@ export default function RootLayout({ children }) {
       <header>
         <nav>
           <input type="checkbox" id="^hamburger-io" />
-          <label for="^hamburger-io" id="^hamburger"><span></span></label>
+          <label htmlFor="^hamburger-io" id="^hamburger"><span></span></label>
           <ul id="^standard-menu">
             <li><a href="/" className="home"><img src="/home.svg" /></a></li>
             <li><a href="/minecraft">マイクラ</a>
@@ -67,10 +68,10 @@ export default function RootLayout({ children }) {
           </ul>
 
           <span id="^hanburger-menu">
-            <a href="/" class="home"><img src="/home.svg" alt="home" /></a>
+            <a href="/" className="home"><img src="/home.svg" alt="home" /></a>
             <input type="radio" name="^header-nav-origin" id="^header-nav-index" checked hidden />
             <input type="radio" name="^header-nav-origin" id="^header-nav-minecraft" hidden />
-            <label for="^header-nav-minecraft"><a href="/minecraft">マイクラ</a>
+            <label htmlFor="^header-nav-minecraft"><a href="/minecraft">マイクラ</a>
               <ul>
                 <li><a href="/minecraft/mods">MOD</a></li>
                 <li><a href="/minecraft/maps">配布マップ</a></li>
@@ -80,7 +81,7 @@ export default function RootLayout({ children }) {
               </ul>
             </label>
             <input type="radio" name="^header-nav-origin" id="^header-nav-music" hidden />
-            <label for="^header-nav-music"><a href="/music">作曲</a>
+            <label htmlFor="^header-nav-music"><a href="/music">作曲</a>
               <ul>
                 <li><a href="/music/original">オリジナル</a></li>
                 <li><a href="/music/second">二次創作･RM</a></li>
@@ -88,7 +89,7 @@ export default function RootLayout({ children }) {
               </ul>
             </label>
             <input type="radio" name="^header-nav-origin" id="^header-nav-pictures" hidden />
-            <label for="^header-nav-pictures"><a href="/pictures">絵</a>
+            <label htmlFor="^header-nav-pictures"><a href="/pictures">絵</a>
               <ul>
                 <li><a href="/pictures/dots">ドット絵</a></li>
                 <li><a href="/pictures/others">その他の絵</a></li>

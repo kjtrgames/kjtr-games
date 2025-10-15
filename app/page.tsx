@@ -31,7 +31,7 @@ export default function Home() {
             href="https://scratch.mit.edu/users/ryoichiro/">@ryoichiro</a>と同一人物です。一応会長…だよ？
         </p>
         <h2>KIJITORAGAMESのアイコン</h2>
-        <div class="center"><img src="home.svg" alt="くそッ！画像を見せられてないじゃないか！" title="icon" /></div>
+        <div className="center"><img src="home.svg" alt="くそッ！画像を見せられてないじゃないか！" title="icon" /></div>
         <p>
           わ　た　し　が　つ　く　り　ま　し　た<br /><br />
           すごいじゃろすごいじゃろ？<br />
