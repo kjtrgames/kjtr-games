@@ -1,0 +1,136 @@
+/* It's standard menu*/
+
+:root {
+  --is-hamburger: 0;
+}
+
+header nav {
+  border: var(--header-border-color) var(--header-border-width) var(--header-border-style);
+}
+
+header nav>span {
+  display: none;
+}
+
+#\^standard-menu>li>ul {
+  border: var(--header-border-color) var(--header-border-width) var(--header-border-style);
+}
+
+#\^standard-menu {
+  border: var(--header-border-color) var(--header-border-width) var(--header-border-style);
+  box-sizing: content-box;
+  display: flex;
+  font-size: 1.05rem;
+  height: 3rem;
+  left: 0rem;
+  margin-top: 0;
+  padding-top: 0;
+  padding-left: 0.5em;
+  position: fixed;
+  text-align: center;
+  top: 0rem;
+  transition:
+    all var(--header-transition);
+  width: calc(100% - var(--header-border-width) * 2);
+}
+#\^standard-menu:hover {
+  height: 4rem;
+  transform: translate(0, -2px);
+}
+
+#\^standard-menu>li {
+  list-style: none;
+}
+header nav:hover>ul>li>a {
+  line-height: 4rem;
+}
+
+/* 要検証、Chrome, Macでは不要と確認済み */
+#\^standard-menu:first-child a::before {
+  content:"a";
+}
+/**/
+
+#\^standard-menu>li>a {
+  border-radius: 0;
+  line-height: 3rem;
+  transition:
+    all var(--header-transition);
+}
+
+#\^standard-menu>li:hover>a {
+  border-radius: calc(var(--header-content-radius) / 2);
+}
+
+#\^standard-menu>li>ul {
+  background: var(--header-content-bg);
+  border-radius: 0 0 var(--header-content-radius) var(--header-content-radius);
+  border-width: 0;
+  padding-left: 0;
+  transition:
+    border-width 0ms var(--header-transition);
+}
+
+#\^standard-menu>li:hover>ul {
+  border-width: var(--header-border-width);
+  transition:
+    border-width var(--header-transition);
+}
+
+#\^standard-menu>li>ul>li {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#\^standard-menu>li>ul>li>a {
+  height: 0;
+  line-height: 0;
+  opacity: 0;
+  transition: 
+    height var(--header-transition),
+    line-height var(--header-transition),
+    opacity var(--header-transition);
+}
+
+#\^standard-menu>li:hover>ul>li>a {
+  height: 3em;
+  line-height: 3em;
+  opacity: 1;
+}
+
+/* for home svg */
+
+header li.home>a>img {
+  height: 2em;
+  width: auto;
+  margin-left: 2.5em;
+  margin-right: 0.5em;
+  position: relative;
+  top:0.375em;
+}
+
+
+header:hover li.home>a>img {
+  height: 3em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+header nav li.home:hover>a {
+  background: transparent;
+}
+
+/* for round lowest child content */
+
+#\^standard-menu>li>ul>li:nth-last-child(1)>a:hover {
+  border-radius: 0 0 var(--header-content-radius) var(--header-content-radius);
+}
+
+#\^standard-menu>li>ul>li:nth-last-child(1)>a {
+  list-style: 10em;
+}
+
+#\^hamburger {
+  display: none;
+}
