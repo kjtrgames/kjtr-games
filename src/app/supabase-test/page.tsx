@@ -9,5 +9,10 @@ export default async function SupaBaseTestingPage() {
   return (
     <>
       <h1>Supabase 接続テスト中...</h1>
+      <main>
+        <article>
+          ああああ
+        </article>
+      </main>
     </>
 )}
