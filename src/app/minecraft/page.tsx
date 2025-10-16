@@ -18,6 +18,7 @@ export const metadata = {
 }
 
 export default function PageMinecraft() {
+  
   return (
     <article>
       <h1>MINECRAFT</h1>
