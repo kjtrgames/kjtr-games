@@ -124,7 +124,7 @@ header nav li.home:hover>a {
 
 /* for round lowest child content */
 
-#\^standard-menu>li>ul>li:nth-last-child(1)>a:hover {
+#\^standard-menu>li>ul>li:nth-last-child(1):hover>a {
   border-radius: 0 0 var(--header-content-radius) var(--header-content-radius);
 }
 
