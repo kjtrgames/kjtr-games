@@ -21,28 +21,29 @@ header nav>span {
   box-sizing: content-box;
   display: flex;
   font-size: 1.05rem;
-  height: 3rem;
-  left: 0rem;
+  height: 3em;
+  left: 0;
   margin-top: 0;
   padding-top: 0;
   padding-left: 0.5em;
   position: fixed;
   text-align: center;
-  top: 0rem;
+  top: 0;
   transition:
     all var(--header-transition);
   width: calc(100% - var(--header-border-width) * 2);
 }
 #\^standard-menu:hover {
-  height: 4rem;
+  height: 4em;
   transform: translate(0, -2px);
 }
 
 #\^standard-menu>li {
   list-style: none;
 }
-header nav:hover>ul>li>a {
-  line-height: 4rem;
+
+#\^standard-menu:hover>li>a {
+  line-height: 4em;
 }
 
 /* 要検証、Chrome, Macでは不要と確認済み */
@@ -53,7 +54,7 @@ header nav:hover>ul>li>a {
 
 #\^standard-menu>li>a {
   border-radius: 0;
-  line-height: 3rem;
+  line-height: 3em;
   transition:
     all var(--header-transition);
 }
