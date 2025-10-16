@@ -1,3 +1,6 @@
+import { supabase } from "@/lib/supabaseClient";
+import { JSX } from "react";
+
 export const metadata = {
   title: "マイクラ作品一覧",
   description: 'マイクラ関連の作品投稿サイト',
@@ -17,8 +20,22 @@ export const metadata = {
   }, 
 }
 
-export default function PageMinecraft() {
+export default async function PageMinecraft() {
+
+  const { data, error } = await supabase
+    .from('articles')
+    .select('id, title, content, author')
+    .like('work_type', 'minecraft:%');
   
+  let articles: JSX.Element;
+
+  if (error) {
+    articles = <div>Error: {error.message}</div>
+  };
+  if (!data?.length) {
+    articles = <div>何も投稿されておりません。<br />…は？何も投稿されてないわけ無いだろﾑｯｺﾛｽぞテメー</div>
+  };
+
   return (
     <article>
       <h1>MINECRAFT</h1>
@@ -37,7 +54,7 @@ export default function PageMinecraft() {
           <li>シェーダーパック</li>
           <li>RealTrainModの追加パック</li>
         </ul>
-        なんかも投稿されます。(唐突な正気)
+        なんかも投稿されます。(唐突な正気)(正気と言えるのだろうかこれは)
       </p>
       <p>
         そんなわけで、このページに一覧を紹介したら見づらいので、<br />
@@ -51,6 +68,12 @@ export default function PageMinecraft() {
       </p>
       <h2>作品紹介</h2>
       <div id="works">
+        {data.map(article => (
+          <div key={article.id}>
+            <h2>{article.title}</h2>
+            <div dangerouslySetInnerHTML={{ __html: article.content }} />
+          </div>
+        ))}
       </div>
     </article>
   )
