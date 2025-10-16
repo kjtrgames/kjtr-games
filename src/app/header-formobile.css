@@ -13,6 +13,7 @@ header nav .home img {
   width: auto;
 }
 
+
 header nav .home img {
   filter: invert(100%);
 }
@@ -37,7 +38,7 @@ header nav>span {
   position: fixed;
   right: 0;
   top: 0;
-  bottom:0;
+  height: 100dvh;
   list-style-type: none;
   padding-top: 1em;
   padding-bottom: auto;

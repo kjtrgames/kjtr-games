@@ -82,7 +82,7 @@ article {
   border-radius: var(--article-border-width);
   width: 60vw;
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 3em;
   margin-left: 15vw;
   margin-right: 15vw;
   padding-top: 2rem;
