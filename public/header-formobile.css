@@ -22,11 +22,15 @@ header nav .home img {
   font-size: max(3.2vh,3.2vw,20px);
 }
 
-#\^hamburger-menu>label>a {
+#\^hamburger-menu>label {
+  display: block;
+}
+
+#\^hamburger-menu a {
   display: inline;
 }
 
-#\^hamburger-menu>label>a:hover {
+#\^hamburger-menu a:hover {
   border-radius: calc(var(--header-content-radius) / 2)
 }
 
@@ -60,31 +64,31 @@ header nav .home img {
 
 /* for marker */
 
+#\^hamburger-io~span>input {
+  display:none;
+}
 #\^hamburger-io~span>input+label::before {
   display: inline;
   content: "▶︎";
   color: var(--header-color);
-  padding-right: 0;
   padding-right: 1.5em;
   transition:
     padding 0s,
     color calc(var(--header-transition) / 2) calc(var(--header-transition) / 2);
   }
-#\^hamburger-io:checked~span>input:checked+label::before {
+#\^hamburger-io~span>input:checked+label::before {
   content: "▼";
 }
 #\^hamburger-io:checked~span>a {
-  padding-left: 2.5em;
+  margin-left: 3em;
 }
 
 /* for childs */
 
 #\^hamburger-io~span>label>ul {
-  marker: none;
-}
-#\^hamburger-io:checked~span>label>ul {
   background: var(--header-content-bg);
   display: block;
+  marker: none;
   position: relative;
   left: 0;
   list-style: none;
@@ -116,8 +120,9 @@ header nav .home img {
     line-height var(--header-transition),
     opacity var(--header-transition);
 }
-#\^hamburger-io:checked~span>label>ul {
-  border-radius: calc(var(--header-content-radius) / 4) calc(var(--header-content-radius) / 4)  calc(var(--header-content-radius) / 4) calc(var(--header-content-radius) / 4);
+
+#\^hamburger-io~span>label>ul {
+  border-radius: calc(var(--header-content-radius) / 4);
 }
 
 

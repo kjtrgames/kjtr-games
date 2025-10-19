@@ -76,8 +76,8 @@ export default function RootLayout({ children }: { children: ReactNode }) {
 
           <span id="^hamburger-menu">
             <a href="/" className="home"><img src="/home.svg" alt="home" /></a>
-            <input type="radio" name="^header-nav-origin" id="^header-nav-index" checked hidden />
-            <input type="radio" name="^header-nav-origin" id="^header-nav-minecraft" hidden />
+            <input type="radio" name="^header-nav-origin" id="^header-nav-index" checked />
+            <input type="radio" name="^header-nav-origin" id="^header-nav-minecraft" />
             <label htmlFor="^header-nav-minecraft"><a href="/minecraft">マイクラ</a>
               <ul>
                 <li><a href="/minecraft/mods">MOD</a></li>
@@ -87,7 +87,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
                 <li><a href="/minecraft/others">その他</a></li>
               </ul>
             </label>
-            <input type="radio" name="^header-nav-origin" id="^header-nav-music" hidden />
+            <input type="radio" name="^header-nav-origin" id="^header-nav-music" />
             <label htmlFor="^header-nav-music"><a href="/music">作曲</a>
               <ul>
                 <li><a href="/music/original">オリジナル</a></li>
@@ -95,7 +95,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
                 <li><a href="/music/others">その他</a></li>
               </ul>
             </label>
-            <input type="radio" name="^header-nav-origin" id="^header-nav-pictures" hidden />
+            <input type="radio" name="^header-nav-origin" id="^header-nav-pictures" />
             <label htmlFor="^header-nav-pictures"><a href="/pictures">絵</a>
               <ul>
                 <li><a href="/pictures/dots">ドット絵</a></li>
