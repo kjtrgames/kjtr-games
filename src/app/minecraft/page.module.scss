@@ -1,4 +1,14 @@
 .\^anarticle {
   height: 10em;
   overflow: hidden;
+
+  .info {
+    display: none;
+  }
+  .warn {
+    @extend .info;
+  }
+  .alert {
+    @extend .info;
+  }
 }
