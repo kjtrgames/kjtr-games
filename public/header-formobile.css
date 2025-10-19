@@ -26,12 +26,18 @@ header nav .home img {
   display: block;
 }
 
-#\^hamburger-menu a {
+#\^hamburger-menu>label>a {
   display: inline;
 }
 
-#\^hamburger-menu a:hover {
-  border-radius: calc(var(--header-content-radius) / 2)
+#\^hamburger-menu>a,
+#\^hamburger-menu>label>ul>li>a {
+  text-align: center;
+}
+
+#\^hamburger-menu>a:hover,
+#\^hamburger-menu>label>a:hover {
+  border-radius: calc(var(--header-content-radius) / 2);
 }
 
 /* for menu's backgrounds */
@@ -42,8 +48,9 @@ header nav .home img {
   position: fixed;
   right: 0;
   top: 0;
-  height: 100dvh;
+  height: 100svh;
   list-style-type: none;
+  overflow: scroll;
   padding-top: 1em;
   padding-bottom: auto;
   padding-left: 0;
@@ -56,81 +63,92 @@ header nav .home img {
   z-index: 222280;
 }
 
-#\^hamburger-io:checked~span {
+#\^hamburger-io:checked~#\^hamburger-menu {
   display: block;
-  width: 15em;
-  padding-left: 1em;
+  width: 11em;
+  padding-left: 0.8em;
+  padding-right: 0.8em;
 }
 
 /* for marker */
 
-#\^hamburger-io~span>input {
-  position: absolute;
-  left: -8101919114514px;
-  opacity: 0;
+#\^hamburger-menu input {
+  text-align: left;
+  position: relative;
+  font-size: max(3.2vh,3.2vw,20px);
+  left: -999px;
 }
-#\^hamburger-io~span>input+label::before {
+#\^hamburger-menu>label>input::before {
   display: inline;
-  content: "▶︎";
+  width: 1em;
+  position: relative;
+  left: 999px;
+  font-size: max(3.2vh,3.2vw,20px);
+  content: "ー";
   color: var(--header-color);
-  padding-right: 1.5em;
+  padding-right: 1em;
   transition:
     padding 0s,
     color calc(var(--header-transition) / 2) calc(var(--header-transition) / 2);
   }
-#\^hamburger-io~span>input:checked+label::before {
-  content: "▼";
+#\^hamburger-menu>label>input:checked::before {
+  content: "◯";
 }
-#\^hamburger-io:checked~span>a {
-  margin-left: 3em;
+#\^hamburger-menu>a,
+#\^hamburger-menu>label>a {
+  margin-left: 1.5em;
+  line-height: 2em;
+  height: 2em;
 }
+
 
 /* for childs */
 
-#\^hamburger-io~span>label>ul {
+#\^hamburger-menu>label>ul {
   background: var(--header-content-bg);
-  display: block;
-  marker: none;
-  position: relative;
-  left: 0;
-  list-style: none;
-  margin-block-start: 0;
+  border-radius: calc(var(--header-content-radius) / 4);
+  border-width: 0;
+  padding-left: 0;
+  margin: 0;
+  transition:
+    border-width 0ms var(--header-transition);
 }
-
-#\^hamburger-io~span>label>ul>li {
+#\^hamburger-menu>label>input:checked~ul {
+  border-width: var(--header-border-width);
+  transition:
+    border-width var(--header-transition);
+}
+#\^hamburger-menu>label>ul>li {
   list-style: none;
   margin-top: 0;
   margin-bottom: 0;
 }
-
-#\^hamburger-io~span>input~label>ul>li {
+#\^hamburger-menu>label>ul>li>a {
   height: 0;
   line-height: 0;
-  opacity: 0;
+  font-size: 0;
   transition: 
     height var(--header-transition),
     line-height var(--header-transition),
-    opacity  var(--header-transition);
+    font-size var(--header-transition);
 }
 
-#\^hamburger-io~span>input:checked+label>ul>li  {
-  height: 2em;
-  line-height: 2em;
-  opacity:1;
-  transition:
-    height var(--header-transition),
-    line-height var(--header-transition),
-    opacity var(--header-transition);
+#\^hamburger-menu>label>input:checked~ul>li>a {
+  height: 1.5em;
+  line-height: 1.5em;
+  font-size: max(3.2vh,3.2vw,20px);
 }
-
-#\^hamburger-io~span>label>ul {
-  border-radius: calc(var(--header-content-radius) / 4);
+#\^hamburger-menu>label>ul>li:first-child:hover>a {
+  border-radius: calc(var(--header-content-radius) / 4) calc(var(--header-content-radius) / 4) 0 0;
+}
+#\^hamburger-menu>label>ul>li:last-child:hover>a {
+  border-radius: 0 0 calc(var(--header-content-radius) / 4) calc(var(--header-content-radius) / 4);
 }
 
 
 /* for expander メニュー展開するやつ */
 
-#\^hamburger {
+  #\^hamburger {
   align-items: center;
   background-color: var(--header-bg);
   border-color: var(--header-border-color);

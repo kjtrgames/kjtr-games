@@ -132,6 +132,7 @@ header nav li.home:hover>a {
   list-style: 10em;
 }
 
-#\^hamburger {
+#\^hamburger,
+#\^hamburger-menu {
   display: none;
 }
