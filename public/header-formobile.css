@@ -65,7 +65,9 @@ header nav .home img {
 /* for marker */
 
 #\^hamburger-io~span>input {
-  display:none;
+  position: absolute;
+  left: -8101919114514px;
+  opacity: 0;
 }
 #\^hamburger-io~span>input+label::before {
   display: inline;
