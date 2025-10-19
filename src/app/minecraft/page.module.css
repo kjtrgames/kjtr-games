@@ -1,0 +1,9 @@
+.\^anarticle {
+  height: 10em;
+  overflow: hidden;
+}
+.info,
+.warn,
+.alert {
+  display: none;
+}
