@@ -13,7 +13,8 @@
     "quill": "^2.0.3",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-quill": "^2.0.0"
+    "react-quill": "^2.0.0",
+    "scss": "^0.2.4"
   },
   "devDependencies": {
     "@types/react": "^19.2.2",
@@ -21,7 +22,11 @@
   },
   "compilerOptions": {
     "target": "esnext",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -34,12 +39,19 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
-
     "baseUrl": ".",
     "paths": {
-      "@/*": ["*"]
+      "@/*": [
+        "*"
+      ]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules"]
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
