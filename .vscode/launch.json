@@ -1,0 +1,14 @@
+{
+    // launch.json for VS Code
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Run preLaunchTask then launch current file (Node)",
+            "type": "node",           // Node.js デバッグ。必要に応じて type を変更してください（例: "python"）
+            "request": "launch",
+            "program": "${file}",        // 実行したいエントリファイルに合わせて変更可
+            "cwd": "${workspaceFolder}",
+            "preLaunchTask": "build-css-and-copy" // ここを tasks.json に定義したタスク名に置き換えてください
+        }
+    ]
+}

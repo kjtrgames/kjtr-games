@@ -1,0 +1,17 @@
+// .vscode/tasks.json
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build-css-and-copy",
+            "type": "shell",
+            "command": "bash",
+            "args": [
+                "-lc",
+                "set -e; mkdir -p public; npx --yes sass --no-source-map src/app:public || true; rsync -a --include='*/' --include='*.css' --exclude='*' src/app/ public/"
+            ],
+            "presentation": { "reveal": "silent", "panel": "shared" },
+            "problemMatcher": []
+        }
+    ]
+}
