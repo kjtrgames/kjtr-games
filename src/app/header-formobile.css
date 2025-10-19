@@ -18,21 +18,21 @@ header nav .home img {
   filter: invert(100%);
 }
 
-header nav>span {
+#\^hamburger-menu {
   font-size: max(3.2vh,3.2vw,20px);
 }
 
-header nav>span>label>a {
+#\^hamburger-menu>label>a {
   display: inline;
 }
 
-header nav>span>label>a:hover {
+#\^hamburger-menu>label>a:hover {
   border-radius: calc(var(--header-content-radius) / 2)
 }
 
 /* for menu's backgrounds */
 
-header nav>span {
+#\^hamburger-menu {
   background-color: var(--header-bg);
   margin: 0;
   position: fixed;
