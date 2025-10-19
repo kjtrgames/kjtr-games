@@ -63,6 +63,7 @@
 
 body {
   background: var(--bg);
+  background-size: cover;
   color: var(--font-color);
   display: inline;
   font-family: 'Zen Maru Gothic', sans-serif;
