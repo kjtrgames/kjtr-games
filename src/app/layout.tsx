@@ -21,11 +21,7 @@ export const metadata = {
     description: '――― ここは、数多の有志によってゲームが集う場所。―――',
     images: ['https://kjtrgames.vercel.app/resources/icon.svg'],
   }, 
-  viewport: {
-    width: "device-width",
-    initialScale: "1.0",
-    viewportFit: "cover"
-  }
+  viewport: 'width=device-width, initial-scale=1.0, viewport-fit=cover'
 }
 
 export default function RootLayout({ children }: { children: ReactNode }) {
