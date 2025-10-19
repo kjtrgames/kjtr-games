@@ -74,7 +74,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             <li><a href="https://forms.gle/VAdJjueZNdRPJi9aA">制作依頼</a></li>
           </ul>
 
-          <span id="^hanburger-menu">
+          <span id="^hamburger-menu">
             <a href="/" className="home"><img src="/home.svg" alt="home" /></a>
             <input type="radio" name="^header-nav-origin" id="^header-nav-index" checked hidden />
             <input type="radio" name="^header-nav-origin" id="^header-nav-minecraft" hidden />
