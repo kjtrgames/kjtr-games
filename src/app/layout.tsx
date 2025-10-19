@@ -1,7 +1,10 @@
+import type { Metadata, Viewport } from "next";
+
 import { ReactNode } from "react";
+
 import "./globals.css";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: {
     template: '%s | キジトラゲームズ',
     default: '作品一覧 | キジトラゲームズ'
@@ -20,8 +23,12 @@ export const metadata = {
     title: 'KIJITORA Games',
     description: '――― ここは、数多の有志によってゲームが集う場所。―――',
     images: ['https://kjtrgames.vercel.app/resources/icon.svg'],
-  }, 
-  viewport: 'width=device-width, initial-scale=1.0, viewport-fit=cover'
+  },
+}
+
+export const viewport: Viewport = {
+  themeColor:"yellow",
+  viewportFit: "cover"
 }
 
 export default function RootLayout({ children }: { children: ReactNode }) {
