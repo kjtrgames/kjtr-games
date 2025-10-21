@@ -75,10 +75,10 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           </ul>
 
           <span id="^hamburger-menu">
-            <label><input type="radio" name="radiomenu" /></label>
+            <input type="radio" name="^header-nav-index" />
             <a href="/" className="home"><img src="/home.svg" alt="home" /></a>
             <label>
-              <input type="radio" name="radiomenu" />
+              <input type="radio" name="^header-nav-index" />
               <a href="/minecraft">マイクラ</a>
               <ul>
                 <li><a href="/minecraft/mods">MOD</a></li>
@@ -89,7 +89,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
               </ul>
             </label>
             <label>
-              <input type="radio" name="radiomenu" />
+              <input type="radio" name="^header-nav-index" />
               <a href="/music">作曲</a>
               <ul>
                 <li><a href="/music/original">オリジナル</a></li>
@@ -98,7 +98,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
               </ul>
             </label>
             <label>
-              <input type="radio" name="radiomenu" />
+              <input type="radio" name="^header-nav-index" />
               <a href="/pictures">絵</a>
               <ul>
                 <li><a href="/pictures/dots">ドット絵</a></li>
