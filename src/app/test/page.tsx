@@ -13,15 +13,15 @@ export default async function TestPage() {
         <article />
         <footer><nav>
           <label>
-            <input type="radio" name="menu" />
+            <input type="radio" name="^header-nav-origin" />
             メニュー1
           </label>
           <label>
-            <input type="radio" name="menu" />
+            <input type="radio" name="^header-nav-origin" />
             メニュー2
           </label>
           <label>
-            <input type="radio" name="menu" />
+            <input type="radio" name="^header-nav-origin" />
             メニュー3
           </label>
         </nav></footer>
