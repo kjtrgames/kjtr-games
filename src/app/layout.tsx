@@ -75,7 +75,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           </ul>
 
           <span id="^hamburger-menu">
-            <label><input type="radio" name="radiomenu" checked /></label>
+            <label><input type="radio" name="radiomenu" /></label>
             <a href="/" className="home"><img src="/home.svg" alt="home" /></a>
             <label>
               <input type="radio" name="radiomenu" />
