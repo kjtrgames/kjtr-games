@@ -1,8 +1,6 @@
-"use client";
-
 import { supabase } from "@/lib/supabaseClient";
 
-export default async function SupaBaseTestingPage() {
+export default async function TestPage() {
   const { data, error } = await supabase.from('articles').select('*').limit(1)
 
   console.log('data:', data)
@@ -12,18 +10,20 @@ export default async function SupaBaseTestingPage() {
     <>
       <h1>色々テストするためのページ</h1>
       <main>
-        <label>
-          <input type="radio" name="menu" />
-          メニュー1
-        </label>
-        <label>
-          <input type="radio" name="menu" />
-          メニュー2
-        </label>
-        <label>
-          <input type="radio" name="menu" />
-          メニュー3
-        </label>
+        <article>
+          <label>
+            <input type="radio" name="menu" />
+            メニュー1
+          </label>
+          <label>
+            <input type="radio" name="menu" />
+            メニュー2
+          </label>
+          <label>
+            <input type="radio" name="menu" />
+            メニュー3
+          </label>
+        </article>
       </main>
     </>
 )}
