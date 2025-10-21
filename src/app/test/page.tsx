@@ -10,7 +10,8 @@ export default async function TestPage() {
     <>
       <h1>色々テストするためのページ</h1>
       <main>
-        <article>
+        <article />
+        <footer><nav>
           <label>
             <input type="radio" name="menu" />
             メニュー1
@@ -23,7 +24,7 @@ export default async function TestPage() {
             <input type="radio" name="menu" />
             メニュー3
           </label>
-        </article>
+        </nav></footer>
       </main>
     </>
 )}
