@@ -1,5 +1,6 @@
 import { supabase } from "@/lib/supabaseClient";
 import { JSX } from "react";
+import "./page.module.css";
 
 export const metadata = {
   title: "マイクラ作品一覧",
