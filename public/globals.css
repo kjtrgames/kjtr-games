@@ -92,6 +92,16 @@ article {
   padding-right: 5vw;
 }
 
+.\^anarticle {
+  min-height: 10em;
+  overflow: hidden;
+}
+.\^anarticle .info,
+.\^anarticle .warn,
+.\^anarticle .alert {
+  display: none;
+}
+
 h1, h2, h3, h4, h5, h6, .center {
   text-align: center;
 }
