@@ -92,13 +92,13 @@ article {
   padding-right: 5vw;
 }
 
-.\^anarticle {
+.\^an_article {
   min-height: 10em;
   overflow: hidden;
 }
-.\^anarticle .info,
-.\^anarticle .warn,
-.\^anarticle .alert {
+.\^an_article .info,
+.\^an_article .warn,
+.\^an_article .alert {
   display: none;
 }
 
