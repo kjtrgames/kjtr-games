@@ -1,6 +1,6 @@
 import { supabase } from '@/lib/supabaseClient';
 
-export default async function WorksPage({ work_type }: { work_type: String }) {
+export default async function WorkArticles({ work_type }: { work_type: String }) {
   const { data, error } = await supabase
     .from('articles')
     .select('id, title, content, author')
