@@ -1,4 +1,4 @@
-import { WorkArticles } from '@/app/work_articles';
+import WorkArticles from '@/lib/workArticles';
 
 export default function MinecraftModsPage() {
 
