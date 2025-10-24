@@ -4,11 +4,11 @@
   --is-hamburger: 0;
 }
 
-header nav {
+nav {
   border: var(--header-border-color) var(--header-border-width) var(--header-border-style);
 }
 
-header nav>span {
+#\^hamburger-menu {
   display: none;
 }
 
@@ -102,7 +102,7 @@ header nav>span {
 
 /* for home svg */
 
-header li.home>a>img {
+nav li.home>a>img {
   height: 2em;
   width: auto;
   margin-left: 2.5em;
@@ -118,7 +118,7 @@ header:hover li.home>a>img {
   margin-right: 1em;
 }
 
-header nav li.home:hover>a {
+nav li.home:hover>a {
   background: transparent;
 }
 

@@ -4,17 +4,17 @@
   --is-hamburger: 1;
 }
 
-header nav>ul {
+#\^standard-menu {
   display: none;
 }
 
-header nav .home img {
+nav .home img {
   height: 2em;
   width: auto;
 }
 
 
-header nav .home img {
+nav .home img {
   filter: invert(100%);
 }
 

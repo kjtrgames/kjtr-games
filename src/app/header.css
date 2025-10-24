@@ -6,23 +6,23 @@ body {
   background: var(--bg);
 }
 
-header {
+nav {
   position: relative;
   top: 0;
   left: 0;
   z-index: 222200;
 }
 
-header li.home>a>img {
+nav li.home>a>img {
   filter: invert(100%);
   transition: all var(--header-transition);
 }
 
-header nav li.home>a:hover>img {
+nav li.home>a:hover>img {
   filter: invert(0%);
 }
 
-header nav a {
+nav a {
   color: var(--header-color);
   display: block;
   text-decoration: none;
@@ -31,21 +31,21 @@ header nav a {
     all var(--header-transition);
 }
 
-header nav a:hover {
+nav a:hover {
   background: var(--header-color);
   color: var(--font-color);
 }
 
-header nav>ul {
+#\^standard-menu {
   background: var(--header-bg);
   box-sizing: content-box;
 }
 
-header nav a {
+nav a {
   padding-inline: 0.5em;
 }
 
-header nav>ul>li:active>a {
+#\^standard-menu>li:active>a {
   color: var(--header-color);
   background: var(--font-color);
 }
