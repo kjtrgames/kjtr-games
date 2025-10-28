@@ -132,7 +132,6 @@ nav li.home:hover>a {
   list-style: 10em;
 }
 
-#\^hamburger,
-#\^hamburger-menu {
+#\^hamburger {
   display: none;
 }

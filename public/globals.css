@@ -93,9 +93,10 @@ article {
 }
 
 .\^an_article {
-  min-height: 10em;
+  height: 10em;
   overflow: hidden;
 }
+
 .\^an_article .info,
 .\^an_article .warn,
 .\^an_article .alert {
