@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
+import type { ReactNode } from "react";
 
-import { ReactNode } from "react";
+import { Search } from '@geist-ui/icons';
 
 import "./globals.css";
 
@@ -38,42 +39,53 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <p>このサイトは、JavaScriptが必須となっております。ご迷惑をおかけします。</p>
       </noscript>  
       
+      <input type="checkbox" id="^hamburger-io" />
+      <label htmlFor="^hamburger-io" id="^hamburger"><span></span></label>
       <nav>
-        <input type="checkbox" id="^hamburger-io" />
-        <label htmlFor="^hamburger-io" id="^hamburger"><span></span></label>
-        <ul id="^standard-menu">
-          <li><a href="/" className="home"><img src="/home.svg" /></a></li>
-          <li><a href="/minecraft">マイクラ</a>
-            <ul>
-              <li><a href="/minecraft/mods">MOD</a></li>
-              <li><a href="/minecraft/maps">配布マップ</a></li>
-              <li><a href="/minecraft/texturepacks">テクスチャ</a></li>
-              <li><a href="/minecraft/addons">MOD追加パック</a></li>
-              <li><a href="/minecraft/others">その他</a></li>
-            </ul>
-          </li>
-          <li><a href="/games">他のゲーム</a>
-            <ul>
-              <li><a href="/games/js">JSゲーム</a></li>
-              <li><a href="/games/kgscript">\(準備中\)</a></li>
-            </ul>
-          </li>
-          <li><a href="/music">作曲</a>
-            <ul>
-              <li><a href="/music/original">オリジナル</a></li>
-              <li><a href="/music/second">二次創作･RM</a></li>
-              <li><a href="/music/others">その他</a></li>
-            </ul>
-          </li>
-          <li><a href="/pictures">絵</a>
-            <ul>
-              <li><a href="/pictures/dots">ドット絵</a></li>
-              <li><a href="/pictures/others">その他の絵</a></li>
-            </ul>
-          </li>
-          <li><a href="https://forms.gle/VAdJjueZNdRPJi9aA">制作依頼</a></li>
-        </ul>
-
+        <div id="^standard-menu">
+          <ul>
+            <li><a href="/" className="home"><img src="/home.svg" /></a></li>
+            <li><a href="/minecraft">マイクラ</a>
+              <ul>
+                <li><a href="/minecraft/mods">MOD</a></li>
+                <li><a href="/minecraft/maps">配布マップ</a></li>
+                <li><a href="/minecraft/texturepacks">テクスチャ</a></li>
+                <li><a href="/minecraft/addons">MOD追加パック</a></li>
+                <li><a href="/minecraft/others">その他</a></li>
+              </ul>
+            </li>
+            <li><a href="/games">他のゲーム</a>
+              <ul>
+                <li><a href="/games/js">JSゲーム</a></li>
+                <li><a href="/games/kgscript">\(準備中\)</a></li>
+              </ul>
+            </li>
+            <li><a href="/music">作曲</a>
+              <ul>
+                <li><a href="/music/original">オリジナル</a></li>
+                <li><a href="/music/second">二次創作･RM</a></li>
+                <li><a href="/music/others">その他</a></li>
+              </ul>
+            </li>
+            <li><a href="/pictures">絵</a>
+              <ul>
+                <li><a href="/pictures/dots">ドット絵</a></li>
+                <li><a href="/pictures/others">その他の絵</a></li>
+              </ul>
+            </li>
+            <li><a href="https://forms.gle/VAdJjueZNdRPJi9aA">制作依頼</a></li>
+          </ul>
+          <ul>
+            <li>
+              <form id="^search-form" action="/search" method="get">
+                <button><Search /></button>
+                <input name="q" type="search" />
+              </form>
+            </li>
+            <li><button id="^sign-in">サイgニn</button></li>
+            <li><button id="^sign-up">サイgヌp</button></li>
+          </ul>
+        </div>
         <span id="^hamburger-menu">
           <input type="radio" name="^header-nav-index" />
           <a href="/" className="home"><img src="/home.svg" alt="home" /></a>
