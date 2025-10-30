@@ -13,11 +13,6 @@ nav .home img {
   width: auto;
 }
 
-
-nav .home img {
-  filter: invert(100%);
-}
-
 #\^hamburger-menu {
   font-size: max(3.2vh,3.2vw,20px);
 }

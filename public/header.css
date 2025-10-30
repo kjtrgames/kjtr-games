@@ -13,15 +13,6 @@ nav {
   z-index: 222200;
 }
 
-nav li.home>a>img {
-  filter: invert(100%);
-  transition: all var(--header-transition);
-}
-
-nav li.home>a:hover>img {
-  filter: invert(0%);
-}
-
 nav a {
   color: var(--header-color);
   display: block;
