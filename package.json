@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@geist-ui/icons": "^1.0.2",
     "@supabase/ssr": "^0.7.0",
     "@supabase/supabase-js": "^2.75.0",
     "geist": "^1.5.1",
