@@ -19,7 +19,7 @@ nav {
 #\^standard-menu {
   border: var(--header-border-color) var(--header-border-width) var(--header-border-style);
   box-sizing: content-box;
-  display:flex;
+  display: flex;
   font-size: 1.05rem;
   height: 3em;
   left: 0;
@@ -40,7 +40,7 @@ nav {
 
 #\^standard-menu>ul {
   display: flex;
-  margin:0;
+  margin: 0;
 }
 
 #\^standard-menu>ul:first-child {
@@ -63,14 +63,14 @@ nav {
 
 
 #\^standard-menu>ul:last-child>li {
-  display:flex;
-  margin-top:0.5em;
-  margin-bottom:0.5em;
+  display: flex;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 #\^standard-menu ul:last-child>li button {
-  margin-right:1em;
-    margin-right:1em;
+  margin-right: 1em;
+    margin-right: 1em;
 }
 
 #\^standard-menu ul:last-child>li button#\^sign-in {
@@ -90,7 +90,7 @@ nav {
 
 #\^search-form {
   background-color: var(--header-content-bg);
-  display:flex;
+  display: flex;
 }
 
 #\^search-form button {
@@ -106,8 +106,8 @@ nav {
   background-color: transparent;
   border: none;
   color: var(--header-color);
-  font-size:1.2em;
-  width:15vw;
+  font-size: 1.2em;
+  width: 15vw;
   
 }
 
@@ -171,18 +171,10 @@ nav {
 
 nav li.home>a>img {
   height: 2em;
-  width: auto;
-  margin-left: 2.5em;
-  margin-right: 0.5em;
-  position: relative;
-  top:0.375em;
-}
-
-
-header:hover li.home>a>img {
-  height: 3em;
-  margin-left: 1em;
-  margin-right: 1em;
+  width: 2em;
+  margin: 0;
+  top: 0.5em;
+  color: var(--header-color);
 }
 
 nav li.home:hover>a {

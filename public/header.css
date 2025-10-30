@@ -36,7 +36,7 @@ nav a {
   padding-inline: 0.5em;
 }
 
-#\^standard-menu>li:active>a {
+#\^standard-menu>ul:first-child a:active {
   color: var(--header-color);
   background: var(--font-color);
 }

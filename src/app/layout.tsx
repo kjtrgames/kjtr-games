@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import type { ReactNode } from "react";
 
 import { Search } from '@geist-ui/icons';
+import { HomeIcon } from "@/lib/organizationIcon";
 
 import "./globals.css";
 
@@ -44,7 +45,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       <nav>
         <div id="^standard-menu">
           <ul>
-            <li><a href="/" className="home"><img src="/home.svg" /></a></li>
+            <li><a href="/" className="home"><HomeIcon alt="Go to OHP: Our Home Page" /></a></li>
             <li><a href="/minecraft">マイクラ</a>
               <ul>
                 <li><a href="/minecraft/mods">MOD</a></li>
@@ -88,7 +89,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         </div>
         <span id="^hamburger-menu">
           <input type="radio" name="^header-nav-index" />
-          <a href="/" className="home"><img src="/home.svg" alt="home" /></a>
+          <a href="/" className="home"><HomeIcon alt="Go to OHP: Our Home Page" /></a>
           <label>
             <input type="radio" name="^header-nav-index" />
             <a href="/minecraft">マイクラ</a>
