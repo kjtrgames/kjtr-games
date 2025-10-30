@@ -12,14 +12,14 @@ nav {
   display: none;
 }
 
-#\^standard-menu>li>ul {
+#\^standard-menu>ul>li>ul {
   border: var(--header-border-color) var(--header-border-width) var(--header-border-style);
 }
 
 #\^standard-menu {
   border: var(--header-border-color) var(--header-border-width) var(--header-border-style);
   box-sizing: content-box;
-  display: flex;
+  display:flex;
   font-size: 1.05rem;
   height: 3em;
   left: 0;
@@ -34,36 +34,103 @@ nav {
   width: calc(100% - var(--header-border-width) * 2);
 }
 #\^standard-menu:hover {
-  height: 4em;
-  transform: translate(0, -2px);
+  height: 3em;
+  transform: unset;
 }
 
-#\^standard-menu>li {
+#\^standard-menu>ul {
+  display: flex;
+  margin:0;
+}
+
+#\^standard-menu>ul:first-child {
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: start;
+  align-items: flex-start;
+  height: 100%;
+  white-space: nowrap;
+  flex: 0 0 auto;
+}
+#\^standard-menu>ul:last-child {
+  -webkit-box-pack: end;
+  justify-content: flex-end;
+  -webkit-box-align: end;
+  height: 100%;
+  flex: 1 1 auto;
+  min-width: 0px;
+}
+
+
+#\^standard-menu>ul:last-child>li {
+  display:flex;
+  margin-top:0.5em;
+  margin-bottom:0.5em;
+}
+
+#\^standard-menu ul:last-child>li button {
+  margin-right:1em;
+    margin-right:1em;
+}
+
+#\^standard-menu ul:last-child>li button#\^sign-in {
+  background: var(--header-bg);
+  color: var(--header-color);
+  border: var(--header-color) solid 1.5px;
+  border-radius: 1em;
+  
+}
+
+#\^standard-menu ul:last-child>li button#\^sign-up {
+  background: var(--header-color);
+  color: var(--header-bg);
+  border: none;
+  border-radius: 1em;
+}
+
+#\^standard-menu form {
+  background-color: var(--header-content-bg);
+  display:flex;
+}
+
+#\^standard-menu form button {
+
+  margin: 0;  
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  color: var(--header-color);
+}
+
+#\^standard-menu form input[type="search"] {
+  background-color: transparent;
+  border: none;
+  color: var(--header-color);
+  font-size:1.2em;
+  width:15vw;
+  
+}
+
+#\^standard-menu>ul>li {
   list-style: none;
 }
 
-#\^standard-menu:hover>li>a {
-  line-height: 4em;
+#\^standard-menu:hover>ul>li>a {
+  line-height: 3em;
 }
 
-/* 要検証、Chrome, Macでは不要と確認済み */
-#\^standard-menu:first-child a::before {
-  content:"a";
-}
-/**/
-
-#\^standard-menu>li>a {
+#\^standard-menu>ul>li>a {
   border-radius: 0;
   line-height: 3em;
   transition:
     all var(--header-transition);
 }
 
-#\^standard-menu>li:hover>a {
+#\^standard-menu>ul>li:hover>a {
   border-radius: calc(var(--header-content-radius) / 2);
 }
 
-#\^standard-menu>li>ul {
+#\^standard-menu>ul>li>ul {
   background: var(--header-content-bg);
   border-radius: 0 0 var(--header-content-radius) var(--header-content-radius);
   border-width: 0;
@@ -72,19 +139,19 @@ nav {
     border-width 0ms var(--header-transition);
 }
 
-#\^standard-menu>li:hover>ul {
+#\^standard-menu>ul>li:hover>ul {
   border-width: var(--header-border-width);
   transition:
     border-width var(--header-transition);
 }
 
-#\^standard-menu>li>ul>li {
+#\^standard-menu>ul>li>ul>li {
   list-style: none;
   margin-top: 0;
   margin-bottom: 0;
 }
 
-#\^standard-menu>li>ul>li>a {
+#\^standard-menu>ul>li>ul>li>a {
   height: 0;
   line-height: 0;
   opacity: 0;
@@ -94,7 +161,7 @@ nav {
     opacity var(--header-transition);
 }
 
-#\^standard-menu>li:hover>ul>li>a {
+#\^standard-menu>ul>li:hover>ul>li>a {
   height: 3em;
   line-height: 3em;
   opacity: 1;
@@ -124,11 +191,11 @@ nav li.home:hover>a {
 
 /* for round lowest child content */
 
-#\^standard-menu>li>ul>li:nth-last-child(1):hover>a {
+#\^standard-menu>ul>li>ul>li:last-child:hover>a {
   border-radius: 0 0 var(--header-content-radius) var(--header-content-radius);
 }
 
-#\^standard-menu>li>ul>li:nth-last-child(1)>a {
+#\^standard-menu>ul>li>ul>li:last-child>a {
   list-style: 10em;
 }
 
