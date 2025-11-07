@@ -1,6 +1,6 @@
 {
-  "name": "MyWebSite",
-  "short_name": "MySite",
+  "name": "キジトラゲームズ",
+  "short_name": "기ラGames",
   "icons": [
     {
       "src": "/web-app-manifest-192x192.png",
