@@ -58,7 +58,7 @@ nav .home img {
   z-index: 222280;
 }
 
-#\^hamburger-io:checked~#\^hamburger-menu {
+#\^hamburger-io:checked~nav #\^hamburger-menu {
   display: block;
   width: 11em;
   padding-left: 0.8em;
