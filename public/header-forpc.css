@@ -57,6 +57,7 @@ nav {
   justify-content: flex-end;
   -webkit-box-align: end;
   height: 100%;
+  white-space: nowrap;
   flex: 1 1 auto;
   min-width: 0px;
 }
@@ -66,11 +67,6 @@ nav {
   display: flex;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
-}
-
-#\^standard-menu ul:last-child>li button {
-  margin-right: 1em;
-    margin-right: 1em;
 }
 
 #\^standard-menu ul:last-child>li button#\^sign-in {
@@ -90,6 +86,7 @@ nav {
 
 #\^search-form {
   background-color: var(--header-content-bg);
+  height: 100%;
   display: flex;
 }
 

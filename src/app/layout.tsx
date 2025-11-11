@@ -78,7 +78,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           </ul>
           <ul>
             <li>
-              <form id="^search-form" action="/search" method="get">
+              <form id="^search-form" action="/search" method="get" autoComplete="off">
                 <button><Search /></button>
                 <input name="q" type="search" />
               </form>
