@@ -219,7 +219,7 @@ nav .home img {
 }
 
 @media (prefers-color-scheme: light) {
-  #\^humberger {
+  #\^hamburger {
     border-radius: 50%;
     transition: border-radius calc(var(--header-transition) / 2);
   }
