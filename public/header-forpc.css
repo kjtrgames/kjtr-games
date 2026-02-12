@@ -166,12 +166,9 @@ nav {
 
 /* for home svg */
 
-nav li.home>a>img {
-  height: 2em;
-  width: 2em;
-  margin: 0;
-  top: 0.5em;
-  color: var(--header-color);
+nav li.home {
+  width:3em;
+  margin-right:0.5em;
 }
 
 nav li.home:hover>a {
